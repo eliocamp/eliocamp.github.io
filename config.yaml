@@ -1,6 +1,7 @@
 theme: starter-academic
 title: Home
 baseurl: 'https://eliocamp.github.io/'
+publishDir: "docs"
 copyright: ''
 enableGitInfo: no
 defaultContentLanguage: en
