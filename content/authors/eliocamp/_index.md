@@ -51,7 +51,7 @@ social:
 superuser: true
 ---
 
-I'm a PhD in atmospheric sciences at the Centre for Ocean and Atmospheric Research, where I study the atmospheric circulation in the Southern Hemisphere and how it affects the weather in South America. 
+I'm a PhD student in atmospheric sciences at the Centre for Ocean and Atmospheric Research, where I study the atmospheric circulation in the Southern Hemisphere and how it affects the weather in South America. 
 
 I'm also the maintainer for several [R packages](LINK) and give [courses](/courses/).
 
