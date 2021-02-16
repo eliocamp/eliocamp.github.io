@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>r-packages | Home</title>
+    <link>https://eliocamp.github.io/category/r-packages/</link>
+      <atom:link href="https://eliocamp.github.io/category/r-packages/index.xml" rel="self" type="application/rss+xml" />
+    <description>r-packages</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://eliocamp.github.io/images/icon_huc61fc599408305ef2dfa25fc2773b32d_15875_512x512_fill_lanczos_center_2.png</url>
+      <title>r-packages</title>
+      <link>https://eliocamp.github.io/category/r-packages/</link>
+    </image>
+    
+    <item>
+      <title>ggnewscale: Multiple Fill and Colour Scales in &#39;ggplot2&#39;</title>
+      <link>https://eliocamp.github.io/project/ggnewscale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/project/ggnewscale/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metamer: Create Data with Identical Statistics</title>
+      <link>https://eliocamp.github.io/project/metamer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/project/metamer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metR: Tools for Easier Analysis of Meteorological Fields</title>
+      <link>https://eliocamp.github.io/project/metr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/project/metr/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
