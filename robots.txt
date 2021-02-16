@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://eliocamp.github.io/sitemap.xml
