@@ -55,4 +55,4 @@ I'm a PhD student in atmospheric sciences at the Centre for Ocean and Atmospheri
 
 I'm also the maintainer for several [R packages](LINK), give [courses](/courses/) and I'm a contributing member of [MetaDocencia](http://metadocencia.org/).
 
-Check out [Código R](https://eliocamp.github.io/codigo-r/) for a bilingual blog about R programming, and [The Scrapbook](https://eliocamp.github.io/scrapbook/) for my adventures analyising and reproducing some of the papers I read for my research. 
+Check out [Código R](https://eliocamp.github.io/codigo-r/) for a bilingual blog about R programming, and [The Scrapbook](https://eliocamp.github.io/scrapbook/) for my adventures analysing and reproducing some of the papers I read for my research. 
