@@ -53,6 +53,6 @@ superuser: true
 
 I'm a PhD student in atmospheric sciences at the Centre for Ocean and Atmospheric Research, where I study the atmospheric circulation in the Southern Hemisphere and how it affects the weather in South America. 
 
-I'm also the maintainer for several [R packages](LINK), give [courses](/courses/) and I'm a contributing member of [MetaDocencia](http://metadocencia.org/).
+I'm also the maintainer for several [R packages](LINK) and give [courses](/courses/).
 
 Check out [Código R](https://eliocamp.github.io/codigo-r/) for a bilingual blog about R programming, and [The Scrapbook](https://eliocamp.github.io/scrapbook/) for my adventures analysing and reproducing some of the papers I read for my research. 
