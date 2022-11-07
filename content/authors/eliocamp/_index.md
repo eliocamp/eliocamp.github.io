@@ -23,9 +23,9 @@ organizations:
   url: http://www.cima.fcen.uba.ar/ 
 
 social:
-# - icon: envelope
-#   icon_pack: fas
-#   link: /#contact
+- icon: mastodon
+  icon_pack: fab
+  link: https://mastodon.social/@eliocamp
 - icon: twitter
   icon_pack: fab
   label: Twitter
@@ -45,9 +45,6 @@ social:
 - icon: globe
   icon_pack: fas
   link: https://eliocamp.github.io/scrapbook/
-# - icon: linkedin
-#   icon_pack: fab
-#   link: https://www.linkedin.com/
 superuser: true
 ---
 
@@ -56,3 +53,5 @@ I'm a PhD student in atmospheric sciences at the Centre for Ocean and Atmospheri
 I'm also the maintainer for several [R packages](LINK) and give [courses](/courses/).
 
 Check out [Código R](https://eliocamp.github.io/codigo-r/) for a bilingual blog about R programming, and [The Scrapbook](https://eliocamp.github.io/scrapbook/) for my adventures analysing and reproducing some of the papers I read for my research. 
+
+ <p hidden><a rel="me" href="https://mastodon.social/@eliocamp">Mastodon</a></p> 
