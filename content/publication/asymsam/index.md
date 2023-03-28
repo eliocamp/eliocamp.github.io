@@ -35,6 +35,8 @@ featured: false
 links:
 - name: "Journal Article"
   url: "https://link.springer.com/article/10.1007%2Fs00382-021-05896-5"
+- name: "HTML version"
+  url: asymsam.html
 url_pdf: asymsam.pdf
 url_code: 'https://github.com/eliocamp/asymsam'
 url_dataset: ''
@@ -45,7 +47,7 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption: ' Regression of geopotential height (meters) at (row 1) 50 hPa and (row 2) 700 hPa with (column a) SAM, (column b) A-SAM, and (column c) S-SAM for the 1979–2018 period.'
   focal_point: ""
