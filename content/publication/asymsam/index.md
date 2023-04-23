@@ -34,7 +34,7 @@ featured: false
 
 links:
 - name: "Journal Article"
-  url: "https://link.springer.com/article/10.1007%2Fs00382-021-05896-5"
+  url: "https://rdcu.be/ctKWP"
 - name: "HTML version"
   url: asymsam.html
 url_pdf: asymsam.pdf
