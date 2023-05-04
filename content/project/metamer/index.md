@@ -24,7 +24,7 @@ links:
 - icon: github
   icon_pack: fab
   name: Repository
-  url: https://github.io/eliocamp/metamer/
+  url: https://github.com/eliocamp/metamer/
 url_code: ""
 url_pdf: ""
 url_slides: ""

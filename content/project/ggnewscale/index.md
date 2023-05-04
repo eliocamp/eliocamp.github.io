@@ -25,7 +25,7 @@ links:
 - icon: github
   icon_pack: fab
   name: Repository
-  url: https://github.io/eliocamp/ggnewscale/
+  url: https://github.com/eliocamp/ggnewscale/
 url_code: ""
 url_pdf: ""
 url_slides: ""

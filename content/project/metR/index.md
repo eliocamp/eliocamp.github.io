@@ -25,7 +25,7 @@ links:
 - icon: github
   icon_pack: fab
   name: Repository
-  url: https://github.io/eliocamp/metR/
+  url: https://github.com/eliocamp/metR/
 url_code: ""
 url_pdf: ""
 url_slides: ""
