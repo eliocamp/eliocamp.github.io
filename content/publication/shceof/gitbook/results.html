@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Results | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</title>
+  <meta name="description" content="4 Results | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Results | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Results | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="methods.html"/>
+<link rel="next" href="discussion.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="abstract.html#abstract" id="toc-abstract"><span class="toc-section-number">1</span> Abstract</a></li>
+<li><a href="introduction.html#introduction" id="toc-introduction"><span class="toc-section-number">2</span> Introduction</a></li>
+<li><a href="methods.html#methods" id="toc-methods"><span class="toc-section-number">3</span> Data and Methods</a>
+<ul>
+<li><a href="methods.html#data" id="toc-data"><span class="toc-section-number">3.1</span> Data</a></li>
+<li><a href="methods.html#methods-1" id="toc-methods-1"><span class="toc-section-number">3.2</span> Methods</a></li>
+<li><a href="methods.html#ceof-methods" id="toc-ceof-methods"><span class="toc-section-number">3.3</span> Complex Empirical Orthogonal Functions (cEOF)</a></li>
+<li><a href="methods.html#computation-procedures" id="toc-computation-procedures"><span class="toc-section-number">3.4</span> Computation procedures</a></li>
+</ul></li>
+<li><a href="results.html#results" id="toc-results"><span class="toc-section-number">4</span> Results</a>
+<ul>
+<li><a href="results.html#spatial" id="toc-spatial"><span class="toc-section-number">4.1</span> cEOF spatial patterns</a></li>
+<li><a href="results.html#regressions" id="toc-regressions"><span class="toc-section-number">4.2</span> cEOFs Regression maps</a>
+<ul>
+<li><a href="results.html#geopotential" id="toc-geopotential"><span class="toc-section-number">4.2.1</span> Geopotential</a></li>
+<li><a href="results.html#temp-ozone" id="toc-temp-ozone"><span class="toc-section-number">4.2.2</span> Temperature and Ozone</a></li>
+</ul></li>
+<li><a href="results.html#psa" id="toc-psa"><span class="toc-section-number">4.3</span> PSA</a></li>
+<li><a href="results.html#sam" id="toc-sam"><span class="toc-section-number">4.4</span> SAM</a></li>
+<li><a href="results.html#tropical" id="toc-tropical"><span class="toc-section-number">4.5</span> Tropical sources of cEOFs variabitliy</a></li>
+<li><a href="results.html#precipitation" id="toc-precipitation"><span class="toc-section-number">4.6</span> cEOFs surface impacts</a></li>
+</ul></li>
+<li><a href="discussion.html#discussion" id="toc-discussion"><span class="toc-section-number">5</span> Discussion and conclusions</a></li>
+<li><a href="declarations.html#declarations" id="toc-declarations">Declarations</a>
+<ul>
+<li><a href="declarations.html#funding" id="toc-funding">Funding</a></li>
+<li><a href="declarations.html#conflict-of-interestcompeting-interests" id="toc-conflict-of-interestcompeting-interests">Conflict of interest/Competing interests</a></li>
+<li><a href="declarations.html#ethics-approval" id="toc-ethics-approval">Ethics approval</a></li>
+<li><a href="declarations.html#consent-to-participate" id="toc-consent-to-participate">Consent to participate</a></li>
+<li><a href="declarations.html#consent-for-publication" id="toc-consent-for-publication">Consent for publication</a></li>
+<li><a href="declarations.html#availability-of-data-and-materials" id="toc-availability-of-data-and-materials">Availability of data and materials</a></li>
+<li><a href="declarations.html#code-availability" id="toc-code-availability">Code availability</a></li>
+<li><a href="declarations.html#authors-contributions" id="toc-authors-contributions">Authors’ contributions</a></li>
+</ul></li>
+<li><a href="extra-figures.html#extra-figures" id="toc-extra-figures"><span class="toc-section-number">6</span> Extra figures</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="results" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Results</h1>
+<div id="spatial" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> cEOF spatial patterns</h2>
+
+<div class="figure"><span style="display:block;" id="fig:ceofs-1"></span>
+<img src="shceof_files/figure-html/ceofs-1-1.png" alt="Spatial patterns for the two leading cEOFs of SON geopotential height zonal anomalies at 50 hPa and 200 hPa for the 1979 – 2019 period. The shading (contours) corresponds to 0º (90º) phase. Arbitrary units. The proportion of variance explained for each mode with respect to the zonal mean is indicated in parenthesis." width="990" />
+<p class="caption">
+Figure 2: Spatial patterns for the two leading cEOFs of SON geopotential height zonal anomalies at 50 hPa and 200 hPa for the 1979 – 2019 period. The shading (contours) corresponds to 0º (90º) phase. Arbitrary units. The proportion of variance explained for each mode with respect to the zonal mean is indicated in parenthesis.
+</p>
+</div>
+
+<div class="figure"><span style="display:block;" id="fig:extended-series"></span>
+<img src="shceof_files/figure-html/extended-series-1.png" alt="Time series of the two leading cEOFs of SON geopotential height zonal anomalies at 50 hPa and 200 hPa. cEOF1 (row a) and cEOF2 (row b) separated in their 0º (column 1) and 90º (column 2) phase. Dark straight line is the linear trend. Black horizontal and vertical line mark the mean value and range of each time series, respectively." width="1500" />
+<p class="caption">
+Figure 3: Time series of the two leading cEOFs of SON geopotential height zonal anomalies at 50 hPa and 200 hPa. cEOF1 (row a) and cEOF2 (row b) separated in their 0º (column 1) and 90º (column 2) phase. Dark straight line is the linear trend. Black horizontal and vertical line mark the mean value and range of each time series, respectively.
+</p>
+</div>
+<p>To describe the variability of the circulation zonal anomalies, the spatial and temporal parts of the first two leading cEOFs of zonal anomalies of geopotential height at 50 hPa and 200 hPa, computed jointly at both levels, are shown in Figures <a href="results.html#fig:ceofs-1">2</a> and <a href="results.html#fig:extended-series">3</a>.
+The first mode (cEOF1) explains 82% of the variance of the zonally anomalous fields, while the second mode (cEOF2) explains a smaller fraction (7%).
+In the spatial patterns (Fig. <a href="results.html#fig:ceofs-1">2</a>), the 0º and the 90º phases are in quadrature by construction, so that each cEOF describe a single wave-like pattern whose amplitude and position (i.e. phase) is controlled by the magnitude and phase of the temporal cEOF.
+The wave patterns described by these cEOFs match the patterns seen in the standard EOFs of Figure <a href="methods.html#fig:eof-naive">1</a>.</p>
+<p>The cEOF1 (Fig. <a href="results.html#fig:ceofs-1">2</a> column 1) is a hemispheric wave 1 pattern with maximum amplitude at high latitudes.
+At 50 hPa the 0º cEOF1 has the maximum of the wave 1 at 150ºE and at 200 hPa, the maximum is located at around 175ºE indicating a westward shift with height.
+The cEOF2 (Fig. <a href="methods.html#fig:eof-naive">1</a> column 2) shows also a zonal wave-like structure with maximum amplitude at high latitudes, but with shorter spatial scales.
+In particular, the dominant structure at both levels is a wave 3 but with larger amplitude in the pacific sector.
+There is no apparent phase shift with height but the amplitude of the pattern is greatly reduced in the stratosphere, which is consistent with the the fact that the cEOF2 computed separately for 200 hPa explains a bit more variance than the cEOF2 computed separately for 50 hPa (11% vs. 3%, respectively).
+This suggest that this barotropic mode represents mainly tropospheric variability.</p>
+<p>There is no significant simultaneous correlation between cEOFs time series.
+Both cEOFs show year-to-year variability but show no evidence of decadal variability (Fig. <a href="results.html#fig:extended-series">3</a>).
+The 0º cEOF has a non-zero temporal mean which, as discussed in Section <a href="methods.html#ceof-methods">3.3</a>, is due to the fact that the temporal mean of zonal anomalies need to be captured by the cEOFs.
+The other indices have almost zero temporal mean, which indicates that only cEOF1 includes variability that significantly projects onto the mean zonal anomalies.
+This is consistent with the fact that the mean zonal anomalies of geopotential height are very similar to the cEOF1 (<span class="math inline">\(r^2\)</span> = 98%) and not similar to the cEOF2 (<span class="math inline">\(r^2\)</span> = 0%).</p>
+<p>A significant positive trend in the 0º phase of cEOF1 is evident (Fig. <a href="results.html#fig:extended-series">3</a>a.1, p-value = 0.0037) while there is no significant trend in any of the phases of cEOF2.
+The positive trend in the 0º cEOF1 translates into a positive trend in cEOF1 magnitude, but not systematic change in phase (not shown).
+This long-term change indicates an increase in the magnitude of the high latitude zonal wave 1.</p>
+</div>
+<div id="regressions" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> cEOFs Regression maps</h2>
+<div id="geopotential" class="section level3" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Geopotential</h3>
+<p>In the previous section, cEOF analysis was applied to zonal anomalies derived by removing the zonally mean values in order to isolate the main characteristics of the main zonal waves characterizing the circulation in the SH.
+In this section we compute regression fields using the full fields of the variables in order to describe the influence of the cEOFs on the temporal anomalies.</p>
+
+<div class="figure"><span style="display:block;" id="fig:eof1-regr-gh"></span>
+<img src="shceof_files/figure-html/eof1-regr-gh-1.png" alt="Regression of SON geopotential height anomalies (\(m^2s^{-1}\)) with the (column 1) 0º and (column 2) 90º phases of the first cEOF for the 1979 – 2019 period at (row a) 50 hPa and (row b) 200 hPa. These coefficients come from multiple linear regression involving the 0º and 90º phases. Areas marked with dots have p-values smaller than 0.01 adjusted for False Detection Rate." width="990" />
+<p class="caption">
+Figure 4: Regression of SON geopotential height anomalies (<span class="math inline">\(m^2s^{-1}\)</span>) with the (column 1) 0º and (column 2) 90º phases of the first cEOF for the 1979 – 2019 period at (row a) 50 hPa and (row b) 200 hPa. These coefficients come from multiple linear regression involving the 0º and 90º phases. Areas marked with dots have p-values smaller than 0.01 adjusted for False Detection Rate.
+</p>
+</div>
+<p>Figure <a href="results.html#fig:eof1-regr-gh">4</a> shows regression maps of SON geopotential height anomalies upon cEOF1.
+At 50 hPa (Figure <a href="results.html#fig:eof1-regr-gh">4</a> row a), the 0º cEOF1 is associated with a positive centre located over the Ross Sea.
+The correlation between the 0º cEOF1 and the zonal mean zonal wind at 60ºS and 10hPa is -0.59 (CI: -0.76 – -0.35), indicating a moderate relationship with the SON stratospheric jet.
+The 90º cEOF1 is associated with a distinctive wave 1 pattern with maximum over the coast of East Antarctica.
+At 200 hPa (Figure <a href="results.html#fig:eof1-regr-gh">4</a> row b) the 0º cEOF1 shows a single centre of positive anomalies spanning West Antarctica surrounded by opposite anomalies in lower latitudes, with its centre shifted slightly eastward compared with the upper-level anomalies.
+The 90º cEOF1 shows a much more zonally symmetrical pattern resembling the negative SAM phase <span class="citation">(e.g. <a href="#ref-fogt2020" role="doc-biblioref">Fogt and Marshall 2020</a>)</span>.
+Therefore, the magnitude and phase of the cEOF1 are associated with the magnitude and phase of a zonal wave mainly in the stratosphere.</p>
+
+<div class="figure"><span style="display:block;" id="fig:eof2-regr-gh"></span>
+<img src="shceof_files/figure-html/eof2-regr-gh-1.png" alt="Same as Figure 4 but for cEOF2." width="990" />
+<p class="caption">
+Figure 5: Same as Figure <a href="results.html#fig:eof1-regr-gh">4</a> but for cEOF2.
+</p>
+</div>
+<p>Figure <a href="results.html#fig:eof2-regr-gh">5</a> shows the regression maps of geopotential height anomalies upon the cEOF2.
+In the troposphere (Fig. <a href="results.html#fig:eof2-regr-gh">5</a> row a) the regression maps show wave trains similar to those identified for cEOF2 patterns (Fig <a href="results.html#fig:ceofs-1">2</a>).
+Regressed anomalies associated with the 0º cEOF2 are 1/4 wavelength out of phase with those associated with the 90º cEOF2.
+All fields have a dominant zonal wave 3 limited to the western hemisphere, over the Pacific and Atlantic Oceans.
+cEOF2 then represents an equivalent barotropic wave train that is very similar to the the PSA Patterns <span class="citation">(<a href="#ref-mo2001" role="doc-biblioref">Mo and Paegle 2001</a>)</span>.
+Comparing the location of the positive anomaly near 90ºW in column 2 of Figure <a href="results.html#fig:eof2-regr-gh">5</a> with Figures 1.a and b from <span class="citation">Mo and Paegle (<a href="#ref-mo2001" role="doc-biblioref">2001</a>)</span>, the 0º cEOF2 regression map could be identified with PSA2, while the 90º cEOF2 resembles PSA1.</p>
+<p>These wave patterns are also present in the stratosphere (Fig. <a href="results.html#fig:eof2-regr-gh">5</a> row a) supporting their equivalent barotropic nature.
+But also present is a monopole over the pole with negative sign associated with the 0º cEOF2 and positive sign associated with the 90º cEOF2.
+This monopole might indicate strengthening of the polar vortex associated with positive values of the 0º cEOF2 and weakening associated with negative values of 0º cEOF2.
+However, since these anomalies are not statistically significant, this feature should not be overinterpreted.</p>
+</div>
+<div id="temp-ozone" class="section level3" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Temperature and Ozone</h3>
+
+<div class="figure"><span style="display:block;" id="fig:eof1-regr-t"></span>
+<img src="shceof_files/figure-html/eof1-regr-t-1.png" alt="Same as Figure 4 but for air temperature (K)." width="990" />
+<p class="caption">
+Figure 6: Same as Figure <a href="results.html#fig:eof1-regr-gh">4</a> but for air temperature (K).
+</p>
+</div>
+
+<div class="figure"><span style="display:block;" id="fig:t-vertical"></span>
+<img src="shceof_files/figure-html/t-vertical-1.png" alt="Regression of SON zonal anomalies averaged between 75°S and 45°S of mean air temperature (shaded, Kelvin) and ozone mixing ratio (contours, negative contours with dashed lines, labels in parts per billion by mass) with the (a) 0º and (b) 90º phase of the cEOF1 for the 1979 – 2019 period." width="990" />
+<p class="caption">
+Figure 7: Regression of SON zonal anomalies averaged between 75°S and 45°S of mean air temperature (shaded, Kelvin) and ozone mixing ratio (contours, negative contours with dashed lines, labels in parts per billion by mass) with the (a) 0º and (b) 90º phase of the cEOF1 for the 1979 – 2019 period.
+</p>
+</div>
+<p>The signature of cEOFs variability on air temperature was also evaluated.
+Figure <a href="results.html#fig:eof1-regr-t">6</a> shows regression maps of air temperature anomalies at 50 hPa and 200 hPa upon cEOF1.
+The distribution of temperature regression coefficients at 50 hPa and at 200 hPa mirror the geopotential height regression maps at 50 hPa (Fig. <a href="results.html#fig:eof1-regr-gh">4</a>).
+In both levels, the 0º cEOF1 is associated with a positive centre over the South Pole with its centre moved slightly towards 150ºE (Fig. <a href="results.html#fig:eof1-regr-t">6</a> column 1).
+On the other hand, the regression maps on the 90º cEOF1 show a clearer wave 1 pattern with its maximum around 60ºE.</p>
+<p>Figure <a href="results.html#fig:t-vertical">7</a> shows the vertical distribution of the regression coefficients on cEOF1 from zonal anomalies of air temperature and of ozone mixing ratio averaged between 75°S and 45°S.
+Temperature zonal anomalies associated with cEOF1 show a clear wave 1 pattern for both 0º and 90º phases throughout the atmosphere above 250 hPa with a sign reversal above 10 hPa.
+As a result of the hydrostatic balance, this is the level in which the geopotential anomaly have maximum amplitude (not shown).</p>
+<p>The maximum ozone regressed anomalies coincide with the minimum temperature anomalies above 10 hPa and with the maximum temperature anomalies below 10 hPa (Fig. <a href="results.html#fig:t-vertical">7</a>).
+Therefore, the ozone zonal wave 1 is negatively correlated with the temperature zonal wave 1 in the upper stratosphere, and positively correlated in the upper stratosphere.
+This change in phase is observed in ozone anomalies forced by planetary waves that reach the stratosphere.
+In the photochemically-dominated upper stratosphere, cold temperatures inhibit the destruction of ozone, explaining the opposite behaviour for both variables as were elucidated with dynamical chemical models <span class="citation">(<a href="#ref-hartmann1979" role="doc-biblioref">Hartmann and Garcia 1979</a>; <a href="#ref-wirth1993" role="doc-biblioref">Wirth 1993</a>; <a href="#ref-smith1995" role="doc-biblioref">Smith 1995</a>)</span>.
+On the other hand, in the advectively-dominated lower stratosphere, ozone anomalies are 1/4 wavelength out of phase with horizontal and vertical transport, which are in addition 1/4 wavelength out of phase with temperature anomalies, resulting in same sign anomalies for the response of both variables <span class="citation">(<a href="#ref-hartmann1979" role="doc-biblioref">Hartmann and Garcia 1979</a>; <a href="#ref-wirth1993" role="doc-biblioref">Wirth 1993</a>; <a href="#ref-smith1995" role="doc-biblioref">Smith 1995</a>)</span>.</p>
+
+<div class="figure"><span style="display:block;" id="fig:o3-regr"></span>
+<img src="shceof_files/figure-html/o3-regr-1.png" alt="Regression of SON mean Total Column Ozone anomalies (shaded, Dobson Units) with the (a) 0º and (b) 90º phases of the cEOF1 for the 1979 – 2019 period. On contours, the mean zonal anomaly of Total Column Ozone (negative contours in dashed lines, Dobson Units). Areas marked with dots have p-values smaller than 0.01 adjusted for False Detection Rate." width="990" />
+<p class="caption">
+Figure 8: Regression of SON mean Total Column Ozone anomalies (shaded, Dobson Units) with the (a) 0º and (b) 90º phases of the cEOF1 for the 1979 – 2019 period. On contours, the mean zonal anomaly of Total Column Ozone (negative contours in dashed lines, Dobson Units). Areas marked with dots have p-values smaller than 0.01 adjusted for False Detection Rate.
+</p>
+</div>
+
+<p>The regression maps of TCO anomalies upon cEOF1 (Fig. <a href="results.html#fig:o3-regr">8</a>) show zonal wave 1 patterns associated with both components of cEOF1.
+The climatological position of the springtime Ozone minimum (ozone hole) is outside the South Pole and towards the Weddell Sea <span class="citation">(e.g. <a href="#ref-grytsai2011" role="doc-biblioref">Grytsai 2011</a>)</span>.
+Thus, the 0º cEOF1 regression field (Figure <a href="results.html#fig:o3-regr">8</a>a) coincides with the climatological position of the ozone hole, while it is 90° out of phase for the 90º cEOF1.
+The temporal correlation between the amplitudes of TCO planetary wave 1 and the amplitude of cEOF1 is 0.79 (CI: 0.63 – 0.88), while the correlation between their phases is -0.85 (CI: -0.92 – -0.74).
+Consequently, cEOF1 is strongly related with the SH ozone variability.</p>
+</div>
+</div>
+<div id="psa" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> PSA</h2>
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:psa-eof2">Table 2: </span>Correlation coefficients (r) between cEOF2 components and the PSA1 and PSA2 modes computed as <span class="citation">Mo and Paegle (<a href="#ref-mo2001" role="doc-biblioref">2001</a>)</span> for the 1979 – 2019 period. 95% confidence intervals in parenthesis. p-values lower than 0.01 in bold.
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+cEOF2
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+PC
+</th>
+<th style="text-align:left;">
+Real
+</th>
+<th style="text-align:left;">
+Imaginary
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+PSA1
+</td>
+<td style="text-align:left;">
+0.26 (CI: -0.04 – 0.52)
+</td>
+<td style="text-align:left;font-weight: bold;">
+0.82 (CI: 0.69 – 0.9)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PSA2
+</td>
+<td style="text-align:left;font-weight: bold;">
+0.79 (CI: 0.63 – 0.88)
+</td>
+<td style="text-align:left;">
+-0.02 (CI: -0.32 – 0.29)
+</td>
+</tr>
+</tbody>
+</table>
+<p>Given the similarity between the cEOF2 related-associated structures (Fig. <a href="results.html#fig:eof2-regr-gh">5</a>) and documented PSA patterns, we study the relationship between them.
+Table <a href="results.html#tab:psa-eof2">2</a> shows the correlations between the two PSA indices and the time series for 0º and 90º phases of cEOF2.
+As visually anticipated by Figure <a href="results.html#fig:eof2-regr-gh">5</a>, there is a large positive correlation between PSA1 and 90º cEOF2, and between PSA2 and 0º cEOF2.
+On the other hand, there is no significant relationship between PSA1 and 0º cEOF2, and between PSA2 and 90º cEOF2.
+As a result, cEOF2 represents well both the spatial structure and temporal evolution of the PSA modes, so it is possible to make an association between its two phases and the two PSA modes.
+That is, the phase election for cEOF2 that maximises the relationship between ENSO and 90º cEOF2, also maximises the association between cEOF2 components and PSA modes (not shown).</p>
+
+<div class="figure"><span style="display:block;" id="fig:phase-histogram"></span>
+<img src="shceof_files/figure-html/phase-histogram-1.png" alt="Histogram of phase distribution of cEOF2 phase for the 1979 – 2019 period. Bins are centred at 90º, 0º, -90º, -180º with a binwidth of 90º. The small vertical lines near the horizontal axis mark the observations." width="792" />
+<p class="caption">
+Figure 9: Histogram of phase distribution of cEOF2 phase for the 1979 – 2019 period. Bins are centred at 90º, 0º, -90º, -180º with a binwidth of 90º. The small vertical lines near the horizontal axis mark the observations.
+</p>
+</div>
+<p>Figure <a href="results.html#fig:phase-histogram">9</a> shows an histogram that counts the number of SON seasons in which the cEOF2 phase was close to each of the four particular phases (positive/negative of 0º and 90º phases), with the observations for each season marked as rugs on the horizontal axis.
+In 62% of seasons cEOF2 has a phase similar to either the negative or positive 90º phase, making the 90º phase the most common phase.
+This is also the phase that is most correlated with ENSO by the definition of the 0° phase as described in Section <a href="methods.html#methods">3</a>. </p>
+<p>Therefore, by virtue of being the most common phase, the 90º cEOF2 explains more variance than the 0º cEOF2.
+Conventional EOF analysis will therefore tend to separate them relatively cleanly, with the EOF representing the 90º cEOF2 always leading the one representing the 0º cEOF2.
+This phase preference is in agreement with <span class="citation">Irving and Simmonds (<a href="#ref-irving2016" role="doc-biblioref">2016</a>)</span>, who found a bimodal distribution to PSA-like variability (compare our Figure <a href="results.html#fig:phase-histogram">9</a> with their Figure 6).</p>
+</div>
+<div id="sam" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> SAM</h2>
+
+<div class="figure"><span style="display:block;" id="fig:sam-eof-vertical"></span>
+<img src="shceof_files/figure-html/sam-eof-vertical-1.png" alt="Coefficient of determination (\(r^2\)) between each component of cEOFs and the SAM, Asymmetric SAM (A-SAM) and Symmetric SAM (S-SAM) indices computed at each level for the 1979 – 2019 period. Thick lines represent estimates with p-value &lt; 0.01 corrected for False Detection Rate (Benjamini and Hochberg 1995)." width="990" />
+<p class="caption">
+Figure 10: Coefficient of determination (<span class="math inline">\(r^2\)</span>) between each component of cEOFs and the SAM, Asymmetric SAM (A-SAM) and Symmetric SAM (S-SAM) indices computed at each level for the 1979 – 2019 period. Thick lines represent estimates with p-value &lt; 0.01 corrected for False Detection Rate <span class="citation">(<a href="#ref-benjamini1995" role="doc-biblioref">Benjamini and Hochberg 1995</a>)</span>.
+</p>
+</div>
+<p>We now explore the relationship between SAM and the cEOFs motivated by the resemblance between cEOFs regression maps and SAM patterns shown in Section <a href="results.html#regressions">4.2</a>.
+We computed the coefficient of determination between the cEOFs time series and the three SAM indices (SAM, A-SAM and S-SAM) defined by <span class="citation">Campitelli, Díaz, and Vera (<a href="#ref-campitelli2022" role="doc-biblioref">2022a</a>)</span> at each vertical level (Fig. <a href="results.html#fig:sam-eof-vertical">10</a>).
+The SAM index is statistically significantly correlated with the 0º cEOF1 in all levels, and with the 90º cEOF1 and 90º cEOF2 in the troposphere.
+On the other hand, correlations between SAM and the 0º cEOF2 are non-significant.</p>
+<p>The relationship between the SAM and cEOF1 in the troposphere is explained entirely by the zonally symmetric component of the SAM as shown by the high correlation with the S-SAM below 100 hPa and the low and statistically non-significant correlations between the A-SAM and either the 0º or 90º cEOF1.
+In the stratosphere, the 0º cEOF1 is correlated with both A-SAM and S-SAM, while the 90º cEOF1 is highly correlated only with the A-SAM.
+These correlations are consistent with the regression maps of geopotential height in Figure <a href="results.html#fig:eof1-regr-gh">4</a> and their comparison with those obtained for SAM, A-SAM and S-SAM by <span class="citation">Campitelli, Díaz, and Vera (<a href="#ref-campitelli2022" role="doc-biblioref">2022a</a>)</span>.</p>
+<p>In the case of 90º cEOF2, its correlation with the SAM for the troposphere is associated with the asymmetric variability of the SAM.
+Indeed, the 90º cEOF2 shares up to 92% variance with the A-SAM and only 12% at most with the S-SAM (Figure <a href="results.html#fig:sam-eof-vertical">10</a>.b2).
+Such extremely high correlation between A-SAM and 90º cEOF2 suggests that the modes obtained in this work are able to characterise the zonally asymmetric component of the SAM described previously by <span class="citation">Campitelli, Díaz, and Vera (<a href="#ref-campitelli2022" role="doc-biblioref">2022a</a>)</span>.</p>
+</div>
+<div id="tropical" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Tropical sources of cEOFs variabitliy</h2>
+<div class="figure"><span style="display:block;" id="fig:sst-psi-2"></span>
+<img src="shceof_files/figure-html/sst-psi-2-1.png" alt="Regression of SST (K, left column) and streamfunction zonal anomalies (\(m^2/s\times10^-7\), shaded) with their corresponding activity wave flux (vectors) (right column) upon cEOF2 different phases (illustrated in the lower-left arrow) for the 1979 – 2019 period. Areas marked with dots have p-values smaller than 0.01 adjusted for FDR." width="1500" />
+<p class="caption">
+Figure 11: Regression of SST (K, left column) and streamfunction zonal anomalies (<span class="math inline">\(m^2/s\times10^-7\)</span>, shaded) with their corresponding activity wave flux (vectors) (right column) upon cEOF2 different phases (illustrated in the lower-left arrow) for the 1979 – 2019 period. Areas marked with dots have p-values smaller than 0.01 adjusted for FDR.
+</p>
+</div>
+
+<p>The connections between cEOFs and tropical sources of variability were also assessed.
+Figure <a href="results.html#fig:sst-psi-2">11</a> shows the regression maps of Sea Surface Temperature (SST) and streamfunction anomalies at 200 hPa upon standardised cEOF2.
+As well as regression maps for the 0º and 90º phases, we include corresponding regressions for two intermediate directions (corresponding to 45° and 135°).</p>
+<p>The 90º cEOF2 (second row) is associated with strong positive SST anomalies on the Central to Eastern Pacific and negative anomalies over an area across northern Australia, New Zealand the South Pacific Convergence Zone (SPCZ) (Figure <a href="results.html#fig:sst-psi-2">11</a>.b1).
+The regression field of SST anomalies bears a strong resemblance with canonically positive ENSO <span class="citation">(<a href="#ref-bamston1997" role="doc-biblioref">Bamston, Chelliah, and Goldenberg 1997</a>)</span>.
+Indeed, there is a significant and very high correlation (0.76 (CI: 0.6 – 0.87)) between the ONI and the 90º cEOF2 time series.
+In addition to the Pacific ENSO-like pattern, there are also positive anomalies in the western Indian Ocean and negative values in the eastern Indian Ocean, resembling a positive IOD <span class="citation">(<a href="#ref-saji1999" role="doc-biblioref">Saji et al. 1999</a>)</span>.
+Consistently, the correlation between the 90º cEOF2 and the DMI is 0.62 (CI: 0.38 – 0.78).</p>
+<p>The 90º cEOF2 is associated with strong wave-like streamfunction anomalies emanating from the tropics (Figure <a href="results.html#fig:sst-psi-2">11</a>.b2), both from the Central Pacific sector and the Indian Ocean.
+The atmospheric response associated with 90º cEOF2 is then consistent with the combined effect of ENSO and the IOD on the extratropics: with SST anomalies inducing anomalous tropical convection that in turn excite Rossby waves propagating meridionally towards higher latitudes <span class="citation">(<a href="#ref-mo2000" role="doc-biblioref">Mo 2000</a>; <a href="#ref-cai2011" role="doc-biblioref">Cai et al. 2011a</a>; <a href="#ref-nuncio2015" role="doc-biblioref">Nuncio and Yuan 2015</a>)</span>.</p>
+<p>However, the cEOF2 is not associated with the same tropical SST anomaly patterns at all their phases
+Figure <a href="results.html#fig:sst-psi-2">11</a>.d1 and d2 show that the 0º cEOF2 is not associated either with any significant SST nor streamfunction anomalies in the tropics.
+As a result, the correlation between the 0º cEOF2 and ENSO is not significant (0 (CI: -0.3 – 0.3)).
+Meanwhile, Rows a and c in Fig. <a href="results.html#fig:sst-psi-2">11</a> show that the intermediate phases are still associated with significant SST regressed anomalies over the Pacific Ocean, but at slightly different locations.
+The 135º phase is associated with SST anomalies in the central Pacific (Fig. <a href="results.html#fig:sst-psi-2">11</a>a.1), while the 45º phase is associated with SST anomalies in the eastern Pacific, which correspond roughly to the Central Pacific and Eastern Pacific “flavours” of ENSO, respectively (Fig. <a href="results.html#fig:sst-psi-2">11</a>c.1) <span class="citation">(<a href="#ref-kao2009" role="doc-biblioref">Kao and Yu 2009</a>)</span>.
+Both phases are also associated with wave trains generated in the region surrounding Australia and propagates toward the extra-tropics, although less intense than the ones associated with the 90º phase.</p>
+
+<div class="figure"><span style="display:block;" id="fig:enso-phase"></span>
+<img src="shceof_files/figure-html/enso-phase-1.png" alt="SON ONI values plotted against cEOF2 phase for the 1979 – 2019 period. Years with magnitude of cEOF2 greater (smaller) than the 50th percentile are shown as orange diamonds (green circles). Black line is the fit ONI ~ sin(phase) computed by weighted OLS using the magnitude of the cEOF2 as weights." width="990" />
+<p class="caption">
+Figure 12: SON ONI values plotted against cEOF2 phase for the 1979 – 2019 period. Years with magnitude of cEOF2 greater (smaller) than the 50th percentile are shown as orange diamonds (green circles). Black line is the fit ONI ~ sin(phase) computed by weighted OLS using the magnitude of the cEOF2 as weights.
+</p>
+</div>
+<p>To further explore the relationship between tropical forcing and phases of the cEOF2, Figure <a href="results.html#fig:enso-phase">12</a> shows the ONI plotted against the cEOF2 phase for each SON trimester between 1979 and 2019, highlighting years in which the magnitude of cEOF2 is above the median.
+In years with positive (negative) ONI, the cEOF2 phase is mostly around 90º (-90°).
+In the neutral ENSO seasons, the cEOF2 phase is much more variable.
+The black line in Figure <a href="results.html#fig:enso-phase">12</a> is a sinusoidal fit of the relationship between ONI and cEOF2 phase.
+The <span class="math inline">\(r^2\)</span> corresponding to the fit is 0.57, statistically significant with p-value &lt; 0.001, indicating a quasi-sinusoidal relation between these two variables.</p>
+<p>The correlation between the absolute magnitude of the ONI and the cEOF2 amplitude is 0.45 (CI: 0.17 – 0.66).
+However, this relationship is mostly driven by the three years with strongest ENSO events in the period (2015, 1997, and 1982) which coincide with the three years with strongest cEOF2 magnitude (not shown).
+If those years are removed, the correlation becomes non-significant (0.04 (CI: -0.28 – 0.35)).
+Furthermore, even when using all years, the Spearman correlation –which is robust to outliers– is also non-significant (0.2, p-value = 0.21).
+Therefore, although the location of tropical SST anomalies seem to have an effect in defining the phase of the cEOF2, the relationship between the magnitude of cEOF2 and ONI remains uncertain and might be only evident in very strong ENSO events, that are scarce in the historical observational record.</p>
+<p>We conclude that the wave train represented by cEOF2 can be both part of the internal variability of the extratropical atmosphere and forced by tropical SSTs.
+In the former case, the wave train has little phase preference.
+However, when cEOF2 is excited by tropical SST variability, it tends to remain locked to the 90º phase.
+This explains the relative over-abundance of years with cEOF2 near positive and negative 90º phase in Figure <a href="results.html#fig:phase-histogram">9</a>.</p>
+<p>Unlike the cEOF2 case, there are no significant SST regressed anomalies associated with either the 0º or 90º cEOF1 (Sup. Figure <a href="extra-figures.html#fig:sst-psi-1">15</a>).
+Consistently, streamfunction anomalies do not show any tropical influence.
+Instead, the 0º and 90º cEOF1 are associated with zonally propagating wave activity fluxes in the extra-tropics around 60ºS, except for an equatorward flow from the coast of Antarctica around 150ºE in the 0º phase.
+This suggests that the variability of cEOF1 is driven primary by the internal variability of the extra-tropics.</p>
+</div>
+<div id="precipitation" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> cEOFs surface impacts</h2>
+<div class="figure"><span style="display:block;" id="fig:pp-t2m-r2"></span>
+<img src="shceof_files/figure-html/pp-t2m-r2-1.png" alt="Explained variance (\(r^2\) as percentage) of 2-metre temperature (row a) and precipitation (row b) anomalies by the regression upon cEOF1 (column 1) and cEOF2 (column 2)." width="1500" />
+<p class="caption">
+Figure 13: Explained variance (<span class="math inline">\(r^2\)</span> as percentage) of 2-metre temperature (row a) and precipitation (row b) anomalies by the regression upon cEOF1 (column 1) and cEOF2 (column 2).
+</p>
+</div>
+
+<p>The influence of cEOFs variability in the anomalies of both 2-metre air temperature and precipitation in the SH was also explored.
+Figure <a href="results.html#fig:pp-t2m-r2">13</a> shows the 2-meter temperature and precipitation anomalies explained variance by the multiple linear model of both 0º and 90º cEOF1 (column 1), and both 0º and 90º cEOF2 (column 2).
+The variance explained by cEOF1 for precipitation anomalies and temperature anomalies in most regions is extremely low, except for the northern tip of the Antarctic Peninsula, northern Weddell Sea and the Ross Sea coast (Fig.  <a href="results.html#fig:pp-t2m-r2">13</a>a.1).</p>
+<p>This lack of strong relationship between the cEOF1 and SST, temperature and precipitation might be surprising considering the correlation between the cEOF1 and the SAM (Fig. <a href="results.html#fig:sam-eof-vertical">10</a> column 1) and the correlation between SAM and Central Pacific SST, temperature east and west of the Antarctic Peninsula, and with precipitation in western Australia <span class="citation">(<a href="#ref-fogt2020" role="doc-biblioref">Fogt and Marshall 2020</a>)</span>.
+There are two main reasons for this.
+First, the correlation between cEOF1 and the SAM in the troposphere is modest, with less than 50% of shared variance (Fig. <a href="results.html#fig:sam-eof-vertical">10</a> column 1), so these indices are not expected to be equivalent to each other.
+Second, <span class="citation">Campitelli, Díaz, and Vera (<a href="#ref-campitelli2022" role="doc-biblioref">2022a</a>)</span> showed that the strong relationship between the SAM and Pacific SSTs and temperature anomalies around the Antarctic Peninsula is mainly due to the asymmetric part of the SAM.
+Meanwhile, the cEOF1 is significantly correlated only with the symmetric part of the SAM (Fig. <a href="results.html#fig:sam-eof-vertical">10</a> column 1), which by itself is not significantly correlated with surface temperatures in that area.</p>
+<p>On the other hand, the cEOF2 explained variance is greater than 50% in some regions for both variables (Fig. <a href="results.html#fig:pp-t2m-r2">13</a> column 2).
+For 2-metre temperature, there are high values in the tropical Pacific and the SPCZ, as well as the region following an arc between New Zealand and the South Atlantic, with higher values in the Southern Ocean.
+Over the continents, there are moderate values of about 30% variance explained in southern Australia, Southern South America and the Antarctic Peninsula.
+For precipitation, there are high values over the tropics. At higher latitudes, moderate values are observed over eastern Australia and some regions of southern South America.</p>
+<p>Since the cEOF1 has a relatively weak signal in the surface variables explored here, we will only focus on the cEOF2 influence.
+Figure <a href="results.html#fig:pp-temp-2">14</a> shows regression maps of 2-metre temperature (column 1) and precipitation (column 2) anomalies upon different phases of standardised cEOF2.</p>
+
+<div class="figure"><span style="display:block;" id="fig:pp-temp-2"></span>
+<img src="shceof_files/figure-html/pp-temp-2-1.png" alt="Regression of SON mean 2-meter temperature (K, shaded) and 850 hPa geopotential height (m, contours) (column 1), and precipitation (correlation, column 2) upon different phases of cEOF2. For the 1979 – 2019. Areas marked with dots have p-values smaller than 0.01 adjusted for False Detection Rate." width="1500" />
+<p class="caption">
+Figure 14: Regression of SON mean 2-meter temperature (K, shaded) and 850 hPa geopotential height (m, contours) (column 1), and precipitation (correlation, column 2) upon different phases of cEOF2. For the 1979 – 2019. Areas marked with dots have p-values smaller than 0.01 adjusted for False Detection Rate.
+</p>
+</div>
+<p>Temperature anomalies associated with the 90º cEOF (Fig. <a href="results.html#fig:pp-temp-2">14</a>.b1) show positive values in the tropical Pacific, consistent with SSTs anomalies associated with the same phase (Fig. <a href="results.html#fig:sst-psi-2">11</a>.b1).
+At higher latitudes there is a wave-like pattern of positive and negative values that coincide with the nodes of the 850 hPa geopotential height regression patterns.
+This is consistent with temperature anomalies produced by meridional advection of temperature by the meridional winds arising from geostrophic balance.
+Over the continents, the 90º cEOF2 (Fig. <a href="results.html#fig:pp-temp-2">14</a>b.1) is associated with positive regressed temperature anomalies in southern Australia and negative regressed anomalies in southern South America and the Antarctic Peninsula, that are a result of the wave train described before.</p>
+<p>The temperatures anomalies associated with the 0º cEOF2 (Fig. <a href="results.html#fig:pp-temp-2">14</a>d.1) are less extensive and restricted to mid and high latitudes.<br />
+Over the continents, the temperature anomalies regressions are non significant, except for positive anomalies near the Antarctic Peninsula.</p>
+<p>Tropical precipitation anomalies associated with the 90º cEOF2 are strong, with positive anomalies in the central Pacific and western Indian, and negative anomalies in the eastern Pacific (Fig. <a href="results.html#fig:pp-temp-2">14</a>b.2).
+This field is consistent with the SST regression map (Fig. <a href="results.html#fig:pp-temp-2">14</a>b.1) as the positive SST anomalies enhance tropical convection and the negative SST anomalies inhibits it.</p>
+<p>In the extra-tropics, the positive 90º cEOF2 is related to drier conditions over eastern Australia and the surrounding ocean, that it is similar signal as the one associated with ENSO <span class="citation">(<a href="#ref-cai2011" role="doc-biblioref">Cai et al. 2011a</a>)</span>.
+However, the 90º cEOF2 is not the phase most correlated with precipitation in that area.
+The 135º phase (an intermediate between positive 90º and 180º cEOF2) component is associated with stronger and more extensive temporal correlations with precipitation over Australia and New Zealand, consistent with the effect of ENSO on precipitation in that region.
+These anomalies are probably related to the direct effect of vertical anomalies of the Southern Oscillation and less so to the large-scale circulation anomalies described by cEOF2 <span class="citation">(<a href="#ref-cai2011b" role="doc-biblioref">Cai et al. 2011b</a>)</span>.
+Circulation anomalies associated with the Indian Ocean Dipole could also play a role <span class="citation">(<a href="#ref-cai2011b" role="doc-biblioref">Cai et al. 2011b</a>)</span>.</p>
+<p>Over South America, the 90º cEOF2 has positive correlations with precipitation in South Eastern South America (SESA) and central Chile, and negative correlations in eastern Brazil.
+This correlation field matches the springtime precipitation signature of ENSO <span class="citation">(e.g. <a href="#ref-cai2020a" role="doc-biblioref">Cai et al. 2020</a>)</span> and it is also similar to the precipitation anomalies associated with the A-SAM <span class="citation">(<a href="#ref-campitelli2022" role="doc-biblioref">Campitelli, Díaz, and Vera 2022a</a>)</span>.
+This result is not surprising considering the close relationship of the 90º cEOF2 with both ONI and A-SAM index, which was shown previously.
+Furthermore, it consolidates the identification of the cEOF2 with the PSA pattern. Resembling the relationship between ONI and the phase of cEOF2 (Fig.  <a href="results.html#fig:enso-phase">12</a>), there is a cEOF2 phase dependence of the precipitation anomalies in SESA (not shown).</p>
+<p>The correlation coefficients between precipitation anomalies and the 0º cEOF2 (Fig. <a href="results.html#fig:pp-temp-2">14</a>d.2) are weaker than for 90º cEOF2.
+There is a residual positive correlation in the equatorial eastern Pacific and small, not statistically significant positive correlations over eastern Australia and negative ones over New Zealand.</p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-bamston1997" class="csl-entry">
+Bamston, Anthony G., Muthuvel Chelliah, and Stanley B. Goldenberg. 1997. <span>“Documentation of a Highly <span>ENSO</span>-Related Sst Region in the Equatorial Pacific: <span>Research</span> Note.”</span> <em>Atmosphere-Ocean</em> 35 (3): 367–83. <a href="https://doi.org/10.1080/07055900.1997.9649597">https://doi.org/10.1080/07055900.1997.9649597</a>.
+</div>
+<div id="ref-benjamini1995" class="csl-entry">
+Benjamini, Yoav, and Yosef Hochberg. 1995. <span>“Controlling the <span>False Discovery Rate</span>: <span>A Practical</span> and <span>Powerful Approach</span> to <span>Multiple Testing</span>.”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em> 57 (1): 289–300. <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a>.
+</div>
+<div id="ref-cai2020a" class="csl-entry">
+Cai, Wenju, Michael J. McPhaden, Alice M. Grimm, Regina R. Rodrigues, Andréa S. Taschetto, René D. Garreaud, Boris Dewitte, et al. 2020. <span>“Climate Impacts of the <span>El Niño</span> on <span>South America</span>.”</span> <em>Nature Reviews Earth &amp; Environment</em> 1 (4): 215–31. <a href="https://doi.org/10.1038/s43017-020-0040-3">https://doi.org/10.1038/s43017-020-0040-3</a>.
+</div>
+<div id="ref-cai2011" class="csl-entry">
+Cai, Wenju, Peter van Rensch, Tim Cowan, and Harry H. Hendon. 2011a. <span>“Teleconnection <span>Pathways</span> of <span>ENSO</span> and the <span>IOD</span> and the <span>Mechanisms</span> for <span>Impacts</span> on <span>Australian Rainfall</span>.”</span> <em>Journal of Climate</em> 24 (15): 3910–23. <a href="https://doi.org/10.1175/2011JCLI4129.1">https://doi.org/10.1175/2011JCLI4129.1</a>.
+</div>
+<div id="ref-cai2011b" class="csl-entry">
+———. 2011b. <span>“Teleconnection <span>Pathways</span> of <span>ENSO</span> and the <span>IOD</span> and the <span>Mechanisms</span> for <span>Impacts</span> on <span>Australian Rainfall</span>.”</span> <em>Journal of Climate</em> 24 (15): 3910–23. <a href="https://doi.org/10.1175/2011JCLI4129.1">https://doi.org/10.1175/2011JCLI4129.1</a>.
+</div>
+<div id="ref-campitelli2022" class="csl-entry">
+Campitelli, Elio, Leandro B. Díaz, and Carolina Vera. 2022a. <span>“Assessment of Zonally Symmetric and Asymmetric Components of the <span>Southern Annular Mode</span> Using a Novel Approach.”</span> <em>Climate Dynamics</em> 58 (1): 161–78. <a href="https://doi.org/10.1007/s00382-021-05896-5">https://doi.org/10.1007/s00382-021-05896-5</a>.
+</div>
+<div id="ref-fogt2020" class="csl-entry">
+Fogt, Ryan L., and Gareth J. Marshall. 2020. <span>“The <span>Southern Annular Mode</span>: <span>Variability</span>, Trends, and Climate Impacts Across the <span>Southern Hemisphere</span>.”</span> <em>WIREs Climate Change</em> 11 (4): e652. <a href="https://doi.org/10.1002/wcc.652">https://doi.org/10.1002/wcc.652</a>.
+</div>
+<div id="ref-grytsai2011" class="csl-entry">
+Grytsai, A. 2011. <span>“Planetary Wave Peculiarities in <span>Antarctic</span> Ozone Distribution During 1979.”</span> <em>International Journal of Remote Sensing</em> 32 (11): 3139–51. <a href="https://doi.org/10.1080/01431161.2010.541518">https://doi.org/10.1080/01431161.2010.541518</a>.
+</div>
+<div id="ref-hartmann1979" class="csl-entry">
+Hartmann, Dennis L., and Rolando R. Garcia. 1979. <span>“A <span>Mechanistic Model</span> of <span>Ozone Transport</span> by <span>Planetary Waves</span> in the <span>Stratosphere</span>.”</span> <em>Journal of the Atmospheric Sciences</em> 36 (2): 350–64. <a href="https://doi.org/10.1175/1520-0469(1979)036&lt;0350:AMMOOT&gt;2.0.CO;2">https://doi.org/10.1175/1520-0469(1979)036&lt;0350:AMMOOT&gt;2.0.CO;2</a>.
+</div>
+<div id="ref-irving2016" class="csl-entry">
+———. 2016. <span>“A <span>New Method</span> for <span>Identifying</span> the <span>Pacific</span> and <span>Its Influence</span> on <span>Regional Climate Variability</span>.”</span> <em>Journal of Climate</em> 29 (17): 6109–25. <a href="https://doi.org/10.1175/JCLI-D-15-0843.1">https://doi.org/10.1175/JCLI-D-15-0843.1</a>.
+</div>
+<div id="ref-kao2009" class="csl-entry">
+Kao, Hsun-Ying, and Jin-Yi Yu. 2009. <span>“Contrasting <span>Eastern-Pacific</span> and <span>Central-Pacific Types</span> of <span>ENSO</span>.”</span> <em>Journal of Climate</em> 22 (3): 615–32. <a href="https://doi.org/10.1175/2008JCLI2309.1">https://doi.org/10.1175/2008JCLI2309.1</a>.
+</div>
+<div id="ref-mo2000" class="csl-entry">
+Mo, Kingtse C. 2000. <span>“Relationships Between <span>Low-Frequency Variability</span> in the <span>Southern Hemisphere</span> and <span>Sea Surface Temperature Anomalies</span>.”</span> <em>Journal of Climate</em> 13 (20): 3599–3610. <a href="https://doi.org/10.1175/1520-0442(2000)013&lt;3599:RBLFVI&gt;2.0.CO;2">https://doi.org/10.1175/1520-0442(2000)013&lt;3599:RBLFVI&gt;2.0.CO;2</a>.
+</div>
+<div id="ref-mo2001" class="csl-entry">
+Mo, Kingtse C., and Julia N. Paegle. 2001. <span>“The <span>Pacific</span> Modes and Their Downstream Effects.”</span> <em>International Journal of Climatology</em> 21 (10): 1211–29. <a href="https://doi.org/10.1002/joc.685">https://doi.org/10.1002/joc.685</a>.
+</div>
+<div id="ref-nuncio2015" class="csl-entry">
+Nuncio, M., and Xiaojun Yuan. 2015. <span>“The <span>Influence</span> of the <span>Indian Ocean Dipole</span> on <span>Antarctic Sea Ice</span>.”</span> <em>Journal of Climate</em> 28 (7): 2682–90. <a href="https://doi.org/10.1175/JCLI-D-14-00390.1">https://doi.org/10.1175/JCLI-D-14-00390.1</a>.
+</div>
+<div id="ref-saji1999" class="csl-entry">
+Saji, N. H., B. N. Goswami, P. N. Vinayachandran, and T. Yamagata. 1999. <span>“A Dipole Mode in the Tropical <span>Indian Ocean</span>.”</span> <em>Nature</em> 401 (6751): 360–63. <a href="https://doi.org/10.1038/43854">https://doi.org/10.1038/43854</a>.
+</div>
+<div id="ref-smith1995" class="csl-entry">
+Smith, Anne K. 1995. <span>“Numerical Simulation of Global Variations of Temperature, Ozone, and Trace Species in the Stratosphere.”</span> <em>Journal of Geophysical Research: Atmospheres</em> 100 (D1): 1253–69. <a href="https://doi.org/10.1029/94JD02395">https://doi.org/10.1029/94JD02395</a>.
+</div>
+<div id="ref-wirth1993" class="csl-entry">
+Wirth, Volkmar. 1993. <span>“Quasi-Stationary Planetary Waves in Total Ozone and Their Correlation with Lower Stratospheric Temperature.”</span> <em>Journal of Geophysical Research: Atmospheres</em> 98 (D5): 8873–82. <a href="https://doi.org/10.1029/92JD02820">https://doi.org/10.1029/92JD02820</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="methods.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="discussion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

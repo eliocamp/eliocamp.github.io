@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Data and Methods | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</title>
+  <meta name="description" content="3 Data and Methods | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Data and Methods | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Data and Methods | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="results.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="abstract.html#abstract" id="toc-abstract"><span class="toc-section-number">1</span> Abstract</a></li>
+<li><a href="introduction.html#introduction" id="toc-introduction"><span class="toc-section-number">2</span> Introduction</a></li>
+<li><a href="methods.html#methods" id="toc-methods"><span class="toc-section-number">3</span> Data and Methods</a>
+<ul>
+<li><a href="methods.html#data" id="toc-data"><span class="toc-section-number">3.1</span> Data</a></li>
+<li><a href="methods.html#methods-1" id="toc-methods-1"><span class="toc-section-number">3.2</span> Methods</a></li>
+<li><a href="methods.html#ceof-methods" id="toc-ceof-methods"><span class="toc-section-number">3.3</span> Complex Empirical Orthogonal Functions (cEOF)</a></li>
+<li><a href="methods.html#computation-procedures" id="toc-computation-procedures"><span class="toc-section-number">3.4</span> Computation procedures</a></li>
+</ul></li>
+<li><a href="results.html#results" id="toc-results"><span class="toc-section-number">4</span> Results</a>
+<ul>
+<li><a href="results.html#spatial" id="toc-spatial"><span class="toc-section-number">4.1</span> cEOF spatial patterns</a></li>
+<li><a href="results.html#regressions" id="toc-regressions"><span class="toc-section-number">4.2</span> cEOFs Regression maps</a>
+<ul>
+<li><a href="results.html#geopotential" id="toc-geopotential"><span class="toc-section-number">4.2.1</span> Geopotential</a></li>
+<li><a href="results.html#temp-ozone" id="toc-temp-ozone"><span class="toc-section-number">4.2.2</span> Temperature and Ozone</a></li>
+</ul></li>
+<li><a href="results.html#psa" id="toc-psa"><span class="toc-section-number">4.3</span> PSA</a></li>
+<li><a href="results.html#sam" id="toc-sam"><span class="toc-section-number">4.4</span> SAM</a></li>
+<li><a href="results.html#tropical" id="toc-tropical"><span class="toc-section-number">4.5</span> Tropical sources of cEOFs variabitliy</a></li>
+<li><a href="results.html#precipitation" id="toc-precipitation"><span class="toc-section-number">4.6</span> cEOFs surface impacts</a></li>
+</ul></li>
+<li><a href="discussion.html#discussion" id="toc-discussion"><span class="toc-section-number">5</span> Discussion and conclusions</a></li>
+<li><a href="declarations.html#declarations" id="toc-declarations">Declarations</a>
+<ul>
+<li><a href="declarations.html#funding" id="toc-funding">Funding</a></li>
+<li><a href="declarations.html#conflict-of-interestcompeting-interests" id="toc-conflict-of-interestcompeting-interests">Conflict of interest/Competing interests</a></li>
+<li><a href="declarations.html#ethics-approval" id="toc-ethics-approval">Ethics approval</a></li>
+<li><a href="declarations.html#consent-to-participate" id="toc-consent-to-participate">Consent to participate</a></li>
+<li><a href="declarations.html#consent-for-publication" id="toc-consent-for-publication">Consent for publication</a></li>
+<li><a href="declarations.html#availability-of-data-and-materials" id="toc-availability-of-data-and-materials">Availability of data and materials</a></li>
+<li><a href="declarations.html#code-availability" id="toc-code-availability">Code availability</a></li>
+<li><a href="declarations.html#authors-contributions" id="toc-authors-contributions">Authors’ contributions</a></li>
+</ul></li>
+<li><a href="extra-figures.html#extra-figures" id="toc-extra-figures"><span class="toc-section-number">6</span> Extra figures</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="methods" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Data and Methods</h1>
+<div id="data" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Data</h2>
+<p>We used monthly geopotential height, air temperature, ozone mixing ratio, and total column ozone (TCO) at 2.5º longitude by 2.5º latitude of horizontal resolution and 37 vertical isobaric levels from the European Centre for Medium-Range Weather Forecasts Reanalysis version 5 [ERA; <span class="citation">Hersbach et al. (<a href="#ref-era5" role="doc-biblioref">2019</a>)</span>] for the period 1979 – 2019.
+Most of our analysis is restricted to the post-satellite era to avoid confounding factors arising from the incorporation of satellite observations, but we also used the preliminary back extension of ERA5 from 1950 to 1978 <span class="citation">(<a href="#ref-era5be" role="doc-biblioref">Bell et al. 2020</a>)</span> to describe long-term trends.
+We derived streamfunction at 200 hPa from ERA5 vorticity using the FORTRAN subroutine FISHPACK <span class="citation">(<a href="#ref-fishpack" role="doc-biblioref">Adams, Swartztrauber, and Sweet 1999</a>)</span> and we computed horizontal wave activity fluxes following <span class="citation">Plumb (<a href="#ref-plumb1985" role="doc-biblioref">1985</a>)</span>.
+Sea Surface Temperature (SST) monthly fields are from Extended Reconstructed Sea Surface Temperature (ERSST) v5 <span class="citation">(<a href="#ref-huang2017" role="doc-biblioref">Huang et al. 2017</a>)</span> and precipitation monthly data from the CPC Merged Analysis of Precipitation <span class="citation">(CMAP, <a href="#ref-cmap" role="doc-biblioref">P. Xie and Arkin 1997</a>)</span>, with a 2º and 2.5º horizontal resolution, respectively.
+The rainfall gridded dataset is based on information from different sources such as rain gauge observations, satellite inferred estimations and the NCEP-NCAR reanalysis, and it is available from 1979 to the present.</p>
+<p>The Oceanic Niño Index <span class="citation">(ONI, <a href="#ref-bamston1997" role="doc-biblioref">Bamston, Chelliah, and Goldenberg 1997</a>)</span> comes from NOAA’s Climate Prediction Center and the Dipole Mode Index <span class="citation">(DMI, <a href="#ref-saji2003" role="doc-biblioref">Saji and Yamagata 2003</a>)</span> from Global Climate Observing System Working Group on Surface Pressure.</p>
+</div>
+<div id="methods-1" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Methods</h2>
+<p>The study is restricted to the spring season, defined as the September-October-November (SON) trimester.
+We compute seasonal means for the different variables, averaging monthly values weighted by the number of days in each month.
+We use the 200 hPa level to represent the upper troposphere and 50 hPa to represent the lower stratosphere.</p>
+<p>We computed the amplitude and phase of the TCO wave 1 by averaging (area-weighted) the data of each SON between 75°S and 45°S, and then extracting the wave-1 component of the Fourier spectrum.
+We chose this latitude band because it is wide enough to capture most of the relevant anomalies of SH mid-latitudes.</p>
+<p>We computed the level-dependent SAM index as the leading EOF of year-round monthly geopotential height anomalies south of 20ºS at each level for the whole period <span class="citation">(<a href="#ref-baldwin2009" role="doc-biblioref">Baldwin and Thompson 2009</a>)</span>.
+We further split the SAM into its zonally symmetric and zonally asymmetric components (S-SAM and A-SAM indices respectively) following <span class="citation">Campitelli, Díaz, and Vera (<a href="#ref-campitelli2022" role="doc-biblioref">2022a</a>)</span>.
+The method consists in first computing the leading EOF of monthly geopotential height anomalies at each level and then computing the zonal mean and the zonal anomalies from its spatial pattern.
+We then project each level’s monthly geopotential height fields onto the corresponding EOF field, the zonally symmetric field and the zonally asymmetric fields to obtain time series corresponding to the full SAM, the symmetric SAM and the asymmetric SAM, respectively.</p>
+<p>Seasonal indices of the PSA patterns (PSA1 and PSA2) were calculated, in agreement with <span class="citation">Mo and Paegle (<a href="#ref-mo2001" role="doc-biblioref">2001</a>)</span>, as the third and fourth EOFs of seasonal mean anomalies for 500-hPa geopotential heights at SH.</p>
+<p>Linear trends were computed by Ordinary Least Squares (OLS) and the 95% confidence interval was computed assuming a t-distribution with the appropriate residual degrees of freedom <span class="citation">(<a href="#ref-wilks2011" role="doc-biblioref">D. Wilks 2011</a>)</span>.</p>
+</div>
+<div id="ceof-methods" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Complex Empirical Orthogonal Functions (cEOF)</h2>
+
+<div class="figure"><span style="display:block;" id="fig:eof-naive"></span>
+<img src="shceof_files/figure-html/eof-naive-1.png" alt="Spatial patterns of the four leading EOFs of SON geopotential height zonal anomalies at 50 hPa south of 20º S for the 1979 – 2019 period (arbitrary units)." width="990" />
+<p class="caption">
+Figure 1: Spatial patterns of the four leading EOFs of SON geopotential height zonal anomalies at 50 hPa south of 20º S for the 1979 – 2019 period (arbitrary units).
+</p>
+</div>
+<p>In the standard EOF analysis, zonal waves may appear as pairs of (possibly degenerate) EOFs representing similar patterns but shifted in phase <span class="citation">(<a href="#ref-horel1984" role="doc-biblioref">Horel 1984</a>)</span>.
+Figure <a href="methods.html#fig:eof-naive">1</a> shows the four leading EOFs of SON geopotential height zonal anomalies at 50 hPa south of 20º S.
+It is clear that the first two EOFs represent a single phase-varying zonal wave 1 pattern and the last two represent a similarly phase-varying pattern with higher wavenumber and three centres of action shifted by 1/4 wavelength (90º in frequency space).</p>
+<p>To describe the phase-varying nature of these two wave patterns, one way is to combine each pair of EOFs into indices of amplitude and phase.
+So, for instance, the amplitude of the wave 1-like EOF could be measured as <span class="math inline">\(\sqrt{\mathrm{PC1}^2 + \mathrm{PC2}^2}\)</span> and its phase as <span class="math inline">\(\tan^{-1} \left ( \frac{\mathrm{PC2}}{\mathrm{PC1}} \right )\)</span> (where <span class="math inline">\(\mathrm{PC1}\)</span> and <span class="math inline">\(\mathrm{PC2}\)</span> are the time series associated with each EOF).
+However, this rests on visual inspection of the spatial patterns and only works properly if both phases appear clearly in different EOFs, which is not guaranteed by construction.
+In particular, this does not work with the wave 1 pattern depicted as the leading EOF in 200 hPa geopotential height zonal anomalies (not shown).</p>
+<p>On the other hand, a better alternative for describing phase-varying waves is to use Complex Empirical Orthogonal Functions (cEOF) analysis <span class="citation">(<a href="#ref-horel1984" role="doc-biblioref">Horel 1984</a>)</span>.
+Each cEOF is a set of complex-valued spatial patterns and time series.
+The real and imaginary components of the complex spatial pattern can be thought of as representing two spatial patterns that are shifted by 1/4 wavelength by construction, similar to EOF1 and EOF2 in Figure <a href="methods.html#fig:eof-naive">1</a>.
+In this paper we use the term 0º cEOF and 90º cEOF to refer to each part of the whole cEOF.
+The actual field reconstructed by each cEOF is then the linear combination of the two spatial fields weighted by its respective time series.
+This is analogous to how any sine wave can be constructed by the sum of a sine wave and cosine wave with different amplitude but constant phase.
+This means that cEOFs naturally represent phase-varying wave-like patterns that change location as well as amplitude.</p>
+<p>For instance, when the phase of the wave matches the 0º phase, then the 0º phase time series is positive, and the 90º phase time series is zero.
+Similarly, when the phase of the wave matches the 90º phase, the 90º phase time series is positive, and the 0º phase time series is zero.
+The intermediate phases have non-zero values in both time series.</p>
+<p>In traditional EOFs, the resulting modes are not unique, and instead are defined up to sign, which corresponds to a rotation in the complex plane of either 0 or <span class="math inline">\(\pi\)</span>.
+In the same way, cEOFs are defined up to a rotation in the complex plane of any value between 0 and <span class="math inline">\(2\pi\)</span> <span class="citation">(<a href="#ref-horel1984" role="doc-biblioref">Horel 1984</a>)</span>.</p>
+<p>cEOFs are computed in the same way as traditional EOFs except that the data is first augmented by computing its analytic signal.
+This is a complex number whose real part is the original series and whose imaginary part is the original data shifted by 90º at each spectral frequency – i.e. its Hilbert transform.
+The Hilbert transform is usually understood in terms of time-varying signal.
+However, in this work we apply the Hilbert transform at each latitude circle, level, and at each SON mean (i.e. the signal only depends on longitude).
+Since each latitude circle is a periodic domain, this procedure does not suffer from edge effects.</p>
+<p>We first applied cEOF analysis to geopotential height zonal anomalies south of 20ºS at 50 and at 200 hPa.
+Figure <a href="results.html#fig:ceofs-1">2</a> a.1 shows the spatial patterns of the two leading cEOF.
+The 0º phase is plotted with shaded contours and the 90º phase, with black contours.
+The two phases of the leading cEOF are very similar to the two leading EOFs shown in Figure <a href="methods.html#fig:eof-naive">1</a> and represent a zonal wave 1 pattern; the 0º phase is roughly the EOF1 and the 90º phase is roughly the EOF2).</p>
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:corr-ceof-splitted">Table 1: </span>Coefficient of determination (<span class="math inline">\(r^2\)</span>) between the time series of the absolute magnitude of complex EOFs computed separately at 200 hPa and 50 hPa (p-values lower than 0.01 in bold).
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+50 hPa
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+200 hPa
+</th>
+<th style="text-align:right;">
+cEOF1
+</th>
+<th style="text-align:right;">
+cEOF2
+</th>
+<th style="text-align:right;">
+cEOF3
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+cEOF1
+</td>
+<td style="text-align:right;font-weight: bold;">
+0.29
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+cEOF2
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;font-weight: bold;">
+0.59
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+cEOF3
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+</tr>
+</tbody>
+</table>
+<p>Table <a href="methods.html#tab:corr-ceof-splitted">1</a> shows the coefficient of determination between time series of the amplitude of each cEOF across levels.
+There is a high degree of correlation between the magnitude of the respective cEOF1 and cEOF2 at each level.
+The spatial patterns of the 50 hPa and 200 hPa cEOFs are also similar (not shown).</p>
+<p>Both the spatial pattern similarity and the high temporal correlation of cEOFs computed at 50 hPa and 200 hPa suggest that these are, to a large extent, modes of joint variability.
+This motivates the decision of performing cEOF jointly between levels.
+Therefore cEOFs were computed using data from both levels at the same time.
+In that sense each cEOF has a spatial component that depends on longitude, latitude and level, and a temporal component that depends only on time.</p>
+<p>Because we are computing the cEOFs of zonal anomalies and not temporal anomalies, the cEOFs need to account for the time-mean zonal anomalies.
+These will tend to be represented by the leading cEOF, which therefore will have a non-zero temporal mean.</p>
+<p>As mentioned before, the choice of phases is arbitrary and equally valid.
+But to make the interpretation easier, we chose the phase of each cEOF so that either the 0º cEOF or the 90º cEOF is aligned with meaningful variables in our analysis.
+This procedure does not create spurious correlations, it only takes an existing relationship and aligns it with a specific phase.</p>
+<p>Preliminary analysis showed that the first cEOF was closely related to the zonal wave 1 of TCO and the second cEOF was closely related to ENSO.
+Therefore, we chose the phase of cEOF1 so that the time series corresponding to the 0º cEOF1 has the maximum correlation with the zonal wave 1 of TCO between 75°S and 45°S.
+Similarly, we chose the phase of cEOF2 so that the coefficient of determination between the ONI and the 0º cEOF2 is minimised, which also nearly maximises the correlation with the 90º cEOF2.</p>
+<p>In Section <a href="results.html#precipitation">4.6</a> we show regressions of precipitation and temperature associated with intermediate phases.
+For those plots, we rotated the cEOFs by 1/4 wavelength by multiplying the complex time series by <span class="math inline">\(\cos(\pi/4) + i\sin(\pi/4)\)</span> and computing the regression on those rotated timeseries.</p>
+<p>While we compute these complex principal components using data from 1979 to 2019, we extended the complex time series back to the 1950 – 1978 period by projecting monthly geopotential height zonal anomalies standardised by level south of 20ºS onto the corresponding spatial patterns.</p>
+<p>We performed linear regressions to quantify the association between the cEOFs and other variables (e.g. geopotential height, temperature, precipitation, and others).
+For each cEOF, we computed regression maps by fitting a multiple linear model involving both the 0º and the 90º phases.
+To obtain the linear coefficients of a variable <span class="math inline">\(X\)</span> with the 0º and 90º phase of each cEOF we fit the equation</p>
+<p><span class="math display">\[
+X(\lambda, \phi, t) = \alpha(\lambda, \phi) \operatorname{cEOF_{0^\circ}} + \beta(\lambda, \phi) \operatorname{cEOF_{90^\circ}} + X_0(\lambda, \phi) + \epsilon(\lambda, \phi, t)
+\]</span></p>
+<p>where <span class="math inline">\(\lambda\)</span> and <span class="math inline">\(\phi\)</span> are the longitude and latitude, <span class="math inline">\(t\)</span> is the time, <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are the linear regression coefficients for 0º and 90º phases respectively, <span class="math inline">\(X_0\)</span> and <span class="math inline">\(\epsilon\)</span> are the constant and error terms respectively.</p>
+<p>We evaluated statistical significance using a two-sided t-test and, in the case of regression maps, p-values were adjusted by controlling for the False Discovery Rate <span class="citation">(<a href="#ref-benjamini1995" role="doc-biblioref">Benjamini and Hochberg 1995</a>; <a href="#ref-wilks2016" role="doc-biblioref">D. S. Wilks 2016</a>)</span> to avoid misleading results from the high number of regressions <span class="citation">(<a href="#ref-walker1914" role="doc-biblioref">Walker 1914</a>; <a href="#ref-katz1991" role="doc-biblioref">Katz and Brown 1991</a>)</span>.</p>
+</div>
+<div id="computation-procedures" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Computation procedures</h2>
+<p>We performed all analysis in this paper using the R programming language <span class="citation">(<a href="#ref-rcoreteam2020" role="doc-biblioref">R Core Team 2020</a>)</span>, using data.table <span class="citation">(<a href="#ref-dowle2020" role="doc-biblioref">Dowle and Srinivasan 2020</a>)</span> and metR <span class="citation">(<a href="#ref-campitelli2020" role="doc-biblioref">Campitelli 2020</a>)</span> packages.
+All graphics are made using ggplot2 <span class="citation">(<a href="#ref-wickham2009" role="doc-biblioref">Wickham 2009</a>)</span>.
+We downloaded data from reanalysis using the ecmwfr package <span class="citation">(<a href="#ref-hufkens2020" role="doc-biblioref">Hufkens 2020</a>)</span> and indices of ENSO and Indian Ocean Dipole (IOD) with the rsoi package <span class="citation">(<a href="#ref-albers2020" role="doc-biblioref">Albers and Campitelli 2020</a>)</span>.
+The paper was rendered using knitr and rmarkdown <span class="citation">(<a href="#ref-xie2015" role="doc-biblioref">Y. Xie 2015</a>; <a href="#ref-allaire2020" role="doc-biblioref">Allaire et al. 2020</a>)</span>.</p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-fishpack" class="csl-entry">
+Adams, John C., Paul N. Swartztrauber, and Roland Sweet. 1999. <span>“<span>FISHPACK</span>, a Package of <span>Fortran</span> Subprograms for the Solution of Separable Elliptic Partial Differential Equations.”</span> https://www2.cisl.ucar.edu/resources/legacy/fishpack.
+</div>
+<div id="ref-albers2020" class="csl-entry">
+Albers, Sam, and Elio Campitelli. 2020. <span>“Rsoi: <span>Import Various Northern</span> and <span>Southern Hemisphere Climate Indices</span>.”</span>
+</div>
+<div id="ref-allaire2020" class="csl-entry">
+Allaire, J. J., Yihui Xie [aut, cre, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, et al. 2020. <span>“Rmarkdown: <span>Dynamic Documents</span> for <span>R</span>.”</span>
+</div>
+<div id="ref-baldwin2009" class="csl-entry">
+Baldwin, Mark P., and David W. J. Thompson. 2009. <span>“A Critical Comparison of Stratospheretroposphere Coupling Indices.”</span> <em>Quarterly Journal of the Royal Meteorological Society</em> 135 (644): 1661–72. <a href="https://doi.org/10.1002/qj.479">https://doi.org/10.1002/qj.479</a>.
+</div>
+<div id="ref-bamston1997" class="csl-entry">
+Bamston, Anthony G., Muthuvel Chelliah, and Stanley B. Goldenberg. 1997. <span>“Documentation of a Highly <span>ENSO</span>-Related Sst Region in the Equatorial Pacific: <span>Research</span> Note.”</span> <em>Atmosphere-Ocean</em> 35 (3): 367–83. <a href="https://doi.org/10.1080/07055900.1997.9649597">https://doi.org/10.1080/07055900.1997.9649597</a>.
+</div>
+<div id="ref-era5be" class="csl-entry">
+Bell, B., H. Hersbach, P. Berrisford, P. Dahlgren, A. Horányi, J. Muñoz Sabater, J. Nicolas, et al. 2020. <span>“<span>ERA5</span> Monthly Averaged Data on Pressure Levels from 1950 to 1978 (Preliminary Version).”</span> <em><span>Copernicus Climate Change Service</span> (<span>C3S</span>) <span>Climate Data Store</span> (<span>CDS</span>)</em> (Accessed on <span><span class="math inline">\(&lt;\)</span></span>26-08-2021<span><span class="math inline">\(&gt;\)</span></span>), https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels-monthly-means-preliminary-back-extension?tab=overview.
+</div>
+<div id="ref-benjamini1995" class="csl-entry">
+Benjamini, Yoav, and Yosef Hochberg. 1995. <span>“Controlling the <span>False Discovery Rate</span>: <span>A Practical</span> and <span>Powerful Approach</span> to <span>Multiple Testing</span>.”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em> 57 (1): 289–300. <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a>.
+</div>
+<div id="ref-campitelli2020" class="csl-entry">
+Campitelli, Elio. 2020. <span>“<span class="nocase">metR</span>: <span>Tools</span> for <span>Easier Analysis</span> of <span>Meteorological Fields</span>.”</span>
+</div>
+<div id="ref-campitelli2022" class="csl-entry">
+Campitelli, Elio, Leandro B. Díaz, and Carolina Vera. 2022a. <span>“Assessment of Zonally Symmetric and Asymmetric Components of the <span>Southern Annular Mode</span> Using a Novel Approach.”</span> <em>Climate Dynamics</em> 58 (1): 161–78. <a href="https://doi.org/10.1007/s00382-021-05896-5">https://doi.org/10.1007/s00382-021-05896-5</a>.
+</div>
+<div id="ref-dowle2020" class="csl-entry">
+Dowle, Matt, and Arun Srinivasan. 2020. <span>“Data.table: <span>Extension</span> of ’Data.frame’.”</span>
+</div>
+<div id="ref-era5" class="csl-entry">
+Hersbach, H., B. Bell, P. Berrisford, G. Biavati, A. Horányi, J. Muñoz Sabater, J. Nicolas, et al. 2019. <span>“<span>ERA5</span> Monthly Averaged Data on Pressure Levels from 1979 to Present.”</span> <em><span>Copernicus Climate Change Service</span> (<span>C3S</span>) <span>Climate Data Store</span> (<span>CDS</span>)</em> (Accessed on <span><span class="math inline">\(&lt;\)</span></span>13-03-2023<span><span class="math inline">\(&gt;\)</span></span>). <a href="https://doi.org/10.24381/cds.6860a573">https://doi.org/10.24381/cds.6860a573</a>.
+</div>
+<div id="ref-horel1984" class="csl-entry">
+Horel, J. D. 1984. <span>“Complex <span>Principal Component Analysis</span>: <span>Theory</span> and <span>Examples</span>.”</span> <em>Journal of Applied Meteorology and Climatology</em> 23 (12): 1660–73. <a href="https://doi.org/10.1175/1520-0450(1984)023&lt;1660:CPCATA&gt;2.0.CO;2">https://doi.org/10.1175/1520-0450(1984)023&lt;1660:CPCATA&gt;2.0.CO;2</a>.
+</div>
+<div id="ref-huang2017" class="csl-entry">
+Huang, Boyin, Peter W. Thorne, Viva F. Banzon, Tim Boyer, Gennady Chepurin, Jay H. Lawrimore, Matthew J. Menne, Thomas M. Smith, Russell S. Vose, and Huai-Min Zhang. 2017. <span>“Extended <span>Reconstructed Sea Surface Temperature</span>, <span>Version</span> 5 (<span>ERSSTv5</span>): <span>Upgrades</span>, <span>Validations</span>, and <span>Intercomparisons</span>.”</span> <em>Journal of Climate</em> 30 (20): 8179–8205. <a href="https://doi.org/10.1175/JCLI-D-16-0836.1">https://doi.org/10.1175/JCLI-D-16-0836.1</a>.
+</div>
+<div id="ref-hufkens2020" class="csl-entry">
+Hufkens, Koen. 2020. <span>“Ecmwfr: <span>Programmatic</span> Interface to the Two <span>European Centre</span> for <span>Medium-Range Weather Forecasts API</span> Services.”</span>
+</div>
+<div id="ref-katz1991" class="csl-entry">
+Katz, Richard W., and Barbara G. Brown. 1991. <span>“The Problem of Multiplicity in Research on Teleconnections.”</span> <em>International Journal of Climatology</em> 11 (5): 505–13. <a href="https://doi.org/10.1002/joc.3370110504">https://doi.org/10.1002/joc.3370110504</a>.
+</div>
+<div id="ref-mo2001" class="csl-entry">
+Mo, Kingtse C., and Julia N. Paegle. 2001. <span>“The <span>Pacific</span> Modes and Their Downstream Effects.”</span> <em>International Journal of Climatology</em> 21 (10): 1211–29. <a href="https://doi.org/10.1002/joc.685">https://doi.org/10.1002/joc.685</a>.
+</div>
+<div id="ref-plumb1985" class="csl-entry">
+Plumb, R. Alan. 1985. <span>“On the <span>Three-Dimensional Propagation</span> of <span>Stationary Waves</span>.”</span> <em>Journal of the Atmospheric Sciences</em> 42 (3): 217–29. <a href="https://doi.org/10.1175/1520-0469(1985)042&lt;0217:OTTDPO&gt;2.0.CO;2">https://doi.org/10.1175/1520-0469(1985)042&lt;0217:OTTDPO&gt;2.0.CO;2</a>.
+</div>
+<div id="ref-rcoreteam2020" class="csl-entry">
+R Core Team. 2020. <em>R: <span>A</span> Language and Environment for Statistical Computing</em>. Manual. <span>Vienna, Austria</span>: <span>R Foundation for Statistical Computing</span>.
+</div>
+<div id="ref-saji2003" class="csl-entry">
+Saji, N. H., and T. Yamagata. 2003. <span>“Possible Impacts of <span>Indian Ocean Dipole</span> Mode Events on Global Climate.”</span> <em>Climate Research</em> 25 (2): 151–69. <a href="https://doi.org/10.3354/cr025151">https://doi.org/10.3354/cr025151</a>.
+</div>
+<div id="ref-walker1914" class="csl-entry">
+Walker, Sir Gilbert Thomas. 1914. <em>Correlation in <span>Seasonal Variations</span> of <span>Weather</span>, <span>III</span>: <span>On</span> the <span>Criterion</span> for the <span>Reality</span> of <span>Relationships Or Periodicities</span></em>. <span>Meteorological Office</span>.
+</div>
+<div id="ref-wickham2009" class="csl-entry">
+Wickham, Hadley. 2009. <em>Ggplot2: <span>Elegant Graphics</span> for <span>Data Analysis</span></em>. Use <span>R</span>! <span>New York</span>: <span>Springer-Verlag</span>. <a href="https://doi.org/10.1007/978-0-387-98141-3">https://doi.org/10.1007/978-0-387-98141-3</a>.
+</div>
+<div id="ref-wilks2016" class="csl-entry">
+Wilks, D. S. 2016. <span>“<span>‘<span>The Stippling Shows Statistically Significant Grid Points</span>’</span>: <span>How Research Results</span> Are <span>Routinely Overstated</span> and <span>Overinterpreted</span>, and <span>What</span> to <span>Do</span> about <span>It</span>.”</span> <em>Bulletin of the American Meteorological Society</em> 97 (12): 2263–73. <a href="https://doi.org/10.1175/BAMS-D-15-00267.1">https://doi.org/10.1175/BAMS-D-15-00267.1</a>.
+</div>
+<div id="ref-wilks2011" class="csl-entry">
+Wilks, Daniel. 2011. <em>Statistical <span>Methods</span> in the <span>Atmospheric Sciences</span></em>. Vol. 100. <span>Elsevier</span>. <a href="https://doi.org/10.1016/B978-0-12-385022-5.00022-1">https://doi.org/10.1016/B978-0-12-385022-5.00022-1</a>.
+</div>
+<div id="ref-cmap" class="csl-entry">
+Xie, Pingping, and Phillip A. Arkin. 1997. <span>“Global <span>Precipitation</span>: <span>A</span> 17-<span>Year Monthly Analysis Based</span> on <span>Gauge Observations</span>, <span>Satellite Estimates</span>, and <span>Numerical Model Outputs</span>.”</span> <em>Bull. Amer. Meteor. Soc.</em> 78 (Accessed on <span><span class="math inline">\(&lt;\)</span></span>26-08-2021<span><span class="math inline">\(&gt;\)</span></span>) (11): 2539–58. <a href="https://doi.org/10.1175/1520-0477(1997)078&lt;2539:GPAYMA&gt;2.0.CO;2">https://doi.org/10.1175/1520-0477(1997)078&lt;2539:GPAYMA&gt;2.0.CO;2</a>.
+</div>
+<div id="ref-xie2015" class="csl-entry">
+Xie, Yihui. 2015. <em>Dynamic Documents with <span>R</span> and Knitr</em>. Second. <span>Boca Raton, Florida</span>: <span>Chapman and Hall/CRC</span>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

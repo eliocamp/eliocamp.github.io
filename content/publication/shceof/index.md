@@ -34,8 +34,10 @@ featured: false
 links:
 - name: "Journal Article"
   url: "https://rdcu.be/dawg0"
-- name: "HTML version"
+- name: "Plain HTML"
   url: shceof.html
+- name: "Gitbook"
+  url: gitbook/abstract.html
 url_pdf: shceof.pdf
 url_code: 'https://github.com/eliocamp/shceof'
 url_dataset: ''
