@@ -37,6 +37,8 @@ links:
   url: "https://rdcu.be/ctKWP"
 - name: "HTML version"
   url: asymsam.html
+- name: "Real-Time data"
+  url: https://www.cima.fcen.uba.ar/~elio.campitelli/asymsam/monitoring/
 url_pdf: asymsam.pdf
 url_code: 'https://github.com/eliocamp/asymsam'
 url_dataset: ''
