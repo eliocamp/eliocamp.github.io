@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Home</title>
+    <link>https://eliocamp.github.io/publication/</link>
+      <atom:link href="https://eliocamp.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://eliocamp.github.io/images/icon_huc61fc599408305ef2dfa25fc2773b32d_15875_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>https://eliocamp.github.io/publication/</link>
+    </image>
+    
+    <item>
+      <title>Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</title>
+      <link>https://eliocamp.github.io/publication/shceof/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/publication/shceof/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assessment of zonally symmetric and asymmetric components of the Southern Annular Mode using a novel approach </title>
+      <link>https://eliocamp.github.io/publication/asymsam/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/publication/asymsam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estudio de los mecanismos físicos asociados con el patrón de onda 3 de la circulación atmosférica del HS</title>
+      <link>https://eliocamp.github.io/publication/tesis-licenciatura/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/publication/tesis-licenciatura/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

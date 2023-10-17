@@ -3,17 +3,112 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://eliocamp.github.io/courses/</loc>
-    <lastmod>2021-07-07T00:00:00+00:00</lastmod>
+    <loc>https://eliocamp.github.io/publication-type/2/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eliocamp.github.io/courses/espaciales-tidy-tutorial/</loc>
-    <lastmod>2021-07-07T00:00:00+00:00</lastmod>
+    <loc>https://eliocamp.github.io/authors/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/author/carolina-vera/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/author/elio-campitelli/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://eliocamp.github.io/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/author/leandro-b.-diaz/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/publication_types/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/publication/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/publication/shceof/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/tag/southern-hemisphere/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/tags/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/tag/zonally-asymmetric-circulation/</loc>
+    <lastmod>2023-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/post-aggregate/knitr-tricks/</loc>
+    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/post-aggregate/</loc>
+    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/tag/r/</loc>
+    <lastmod>2023-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/post-aggregate/dataset-functions/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/courses/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/courses/reproducibility-with-r/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/courses/ciencia-datos-turismo/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/post-aggregate/docker-renv/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/post-aggregate/errors/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/courses/espaciales-tidy-tutorial/</loc>
     <lastmod>2021-07-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -23,22 +118,7 @@
   </url>
   
   <url>
-    <loc>https://eliocamp.github.io/authors/</loc>
-    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eliocamp.github.io/author/elio-campitelli/</loc>
-    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eliocamp.github.io/talk/damtp-sam/</loc>
-    <lastmod>2021-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eliocamp.github.io/tags/</loc>
     <lastmod>2021-02-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -63,38 +143,13 @@
   </url>
   
   <url>
-    <loc>https://eliocamp.github.io/tag/r/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
+    <loc>https://eliocamp.github.io/publication/asymsam/</loc>
+    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eliocamp.github.io/post-aggregate/</loc>
-    <lastmod>2020-05-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eliocamp.github.io/post-aggregate/new-pipe/</loc>
-    <lastmod>2020-05-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eliocamp.github.io/post-aggregate/star-trek/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eliocamp.github.io/tag/fun/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eliocamp.github.io/post-aggregate/enso/</loc>
-    <lastmod>2020-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eliocamp.github.io/post-aggregate/lacrimosa-v-rammstein/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+    <loc>https://eliocamp.github.io/tag/sam/</loc>
+    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -103,7 +158,22 @@
   </url>
   
   <url>
+    <loc>https://eliocamp.github.io/publication-type/7/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/publication/tesis-licenciatura/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eliocamp.github.io/admin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://eliocamp.github.io/brag/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -124,10 +194,6 @@
   
   <url>
     <loc>https://eliocamp.github.io/project/</loc>
-  </url>
-  
-  <url>
-    <loc>https://eliocamp.github.io/publication_types/</loc>
   </url>
   
   <url>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</title>
+  <meta name="description" content="Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="introduction.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="abstract.html#abstract" id="toc-abstract"><span class="toc-section-number">1</span> Abstract</a></li>
+<li><a href="introduction.html#introduction" id="toc-introduction"><span class="toc-section-number">2</span> Introduction</a></li>
+<li><a href="methods.html#methods" id="toc-methods"><span class="toc-section-number">3</span> Data and Methods</a>
+<ul>
+<li><a href="methods.html#data" id="toc-data"><span class="toc-section-number">3.1</span> Data</a></li>
+<li><a href="methods.html#methods-1" id="toc-methods-1"><span class="toc-section-number">3.2</span> Methods</a></li>
+<li><a href="methods.html#ceof-methods" id="toc-ceof-methods"><span class="toc-section-number">3.3</span> Complex Empirical Orthogonal Functions (cEOF)</a></li>
+<li><a href="methods.html#computation-procedures" id="toc-computation-procedures"><span class="toc-section-number">3.4</span> Computation procedures</a></li>
+</ul></li>
+<li><a href="results.html#results" id="toc-results"><span class="toc-section-number">4</span> Results</a>
+<ul>
+<li><a href="results.html#spatial" id="toc-spatial"><span class="toc-section-number">4.1</span> cEOF spatial patterns</a></li>
+<li><a href="results.html#regressions" id="toc-regressions"><span class="toc-section-number">4.2</span> cEOFs Regression maps</a>
+<ul>
+<li><a href="results.html#geopotential" id="toc-geopotential"><span class="toc-section-number">4.2.1</span> Geopotential</a></li>
+<li><a href="results.html#temp-ozone" id="toc-temp-ozone"><span class="toc-section-number">4.2.2</span> Temperature and Ozone</a></li>
+</ul></li>
+<li><a href="results.html#psa" id="toc-psa"><span class="toc-section-number">4.3</span> PSA</a></li>
+<li><a href="results.html#sam" id="toc-sam"><span class="toc-section-number">4.4</span> SAM</a></li>
+<li><a href="results.html#tropical" id="toc-tropical"><span class="toc-section-number">4.5</span> Tropical sources of cEOFs variabitliy</a></li>
+<li><a href="results.html#precipitation" id="toc-precipitation"><span class="toc-section-number">4.6</span> cEOFs surface impacts</a></li>
+</ul></li>
+<li><a href="discussion.html#discussion" id="toc-discussion"><span class="toc-section-number">5</span> Discussion and conclusions</a></li>
+<li><a href="declarations.html#declarations" id="toc-declarations">Declarations</a>
+<ul>
+<li><a href="declarations.html#funding" id="toc-funding">Funding</a></li>
+<li><a href="declarations.html#conflict-of-interestcompeting-interests" id="toc-conflict-of-interestcompeting-interests">Conflict of interest/Competing interests</a></li>
+<li><a href="declarations.html#ethics-approval" id="toc-ethics-approval">Ethics approval</a></li>
+<li><a href="declarations.html#consent-to-participate" id="toc-consent-to-participate">Consent to participate</a></li>
+<li><a href="declarations.html#consent-for-publication" id="toc-consent-for-publication">Consent for publication</a></li>
+<li><a href="declarations.html#availability-of-data-and-materials" id="toc-availability-of-data-and-materials">Availability of data and materials</a></li>
+<li><a href="declarations.html#code-availability" id="toc-code-availability">Code availability</a></li>
+<li><a href="declarations.html#authors-contributions" id="toc-authors-contributions">Authors’ contributions</a></li>
+</ul></li>
+<li><a href="extra-figures.html#extra-figures" id="toc-extra-figures"><span class="toc-section-number">6</span> Extra figures</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</h1>
+</div>
+<div id="abstract" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Abstract</h1>
+<p>The large-scale extratropical circulation in the Southern Hemisphere is much more zonally symmetric than that of the Northern Hemisphere, but its zonal departures, albeit highly relevant for regional impacts, have been less studied.
+In this study we analyse the joint variability of the zonally asymmetric springtime stratospheric and tropospheric circulation using Complex Empirical Orthogonal Functions (cEOF) to characterise planetary waves of varying amplitude and phase.
+The leading cEOF represents variability of a zonal wave 1 in the stratosphere that correlates slightly with the Symmetric Southern Annular Mode (S-SAM).
+The second cEOF (cEOF2) is an alternative representation of the Pacific-South American modes.
+One phase of this cEOF is also very highly correlated with the Asymmetric SAM (A-SAM) in the troposphere.
+Springs with an active ENSO tend to lock the cEOF2 to a specific phase, but have no consistent impact on its magnitude.
+Furthermore, we find indications that the location of Pacific Sea Surface Temperature anomalies affect the phase of the cEOF2.
+As a result, the methodology proposed in this study provides a deeper understanding of the zonally asymmetric springtime extratropical SH circulation.</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

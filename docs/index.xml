@@ -5,12 +5,52 @@
     <link>https://eliocamp.github.io/</link>
       <atom:link href="https://eliocamp.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Home</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 07 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://eliocamp.github.io/images/icon_huc61fc599408305ef2dfa25fc2773b32d_15875_512x512_fill_lanczos_center_2.png</url>
       <title>Home</title>
       <link>https://eliocamp.github.io/</link>
     </image>
+    
+    <item>
+      <title>Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</title>
+      <link>https://eliocamp.github.io/publication/shceof/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/publication/shceof/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>11 tricks to level up your rmarkdown documents  | Código R</title>
+      <link>https://eliocamp.github.io/post-aggregate/knitr-tricks/</link>
+      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/post-aggregate/knitr-tricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Making data available with dataset functions  | Código R</title>
+      <link>https://eliocamp.github.io/post-aggregate/dataset-functions/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/post-aggregate/dataset-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setting up a transparent reproducible R environment with Docker &#43; renv | Código R</title>
+      <link>https://eliocamp.github.io/post-aggregate/docker-renv/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/post-aggregate/docker-renv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Make error messages your own | Código R</title>
+      <link>https://eliocamp.github.io/post-aggregate/errors/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/post-aggregate/errors/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Symmetries and Asymmetries of the  Southern Annular Mode</title>
@@ -29,34 +69,10 @@
     </item>
     
     <item>
-      <title>The new R pipe | Código R</title>
-      <link>https://eliocamp.github.io/post-aggregate/new-pipe/</link>
-      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://eliocamp.github.io/post-aggregate/new-pipe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Analizando ratings de Star Trek en IMDB | Código R</title>
-      <link>https://eliocamp.github.io/post-aggregate/star-trek/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://eliocamp.github.io/post-aggregate/star-trek/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ENSO and regression to the mean | The Scrapbook</title>
-      <link>https://eliocamp.github.io/post-aggregate/enso/</link>
-      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://eliocamp.github.io/post-aggregate/enso/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rammstein vs. Lacrimosa | Código R</title>
-      <link>https://eliocamp.github.io/post-aggregate/lacrimosa-v-rammstein/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://eliocamp.github.io/post-aggregate/lacrimosa-v-rammstein/</guid>
+      <title>Assessment of zonally symmetric and asymmetric components of the Southern Annular Mode using a novel approach </title>
+      <link>https://eliocamp.github.io/publication/asymsam/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/publication/asymsam/</guid>
       <description></description>
     </item>
     
@@ -65,6 +81,14 @@
       <link>https://eliocamp.github.io/projects/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://eliocamp.github.io/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estudio de los mecanismos físicos asociados con el patrón de onda 3 de la circulación atmosférica del HS</title>
+      <link>https://eliocamp.github.io/publication/tesis-licenciatura/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://eliocamp.github.io/publication/tesis-licenciatura/</guid>
       <description></description>
     </item>
     

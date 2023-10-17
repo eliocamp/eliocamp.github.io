@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Declarations | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</title>
+  <meta name="description" content="Declarations | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Declarations | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Declarations | Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="discussion.html"/>
+<link rel="next" href="extra-figures.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="abstract.html#abstract" id="toc-abstract"><span class="toc-section-number">1</span> Abstract</a></li>
+<li><a href="introduction.html#introduction" id="toc-introduction"><span class="toc-section-number">2</span> Introduction</a></li>
+<li><a href="methods.html#methods" id="toc-methods"><span class="toc-section-number">3</span> Data and Methods</a>
+<ul>
+<li><a href="methods.html#data" id="toc-data"><span class="toc-section-number">3.1</span> Data</a></li>
+<li><a href="methods.html#methods-1" id="toc-methods-1"><span class="toc-section-number">3.2</span> Methods</a></li>
+<li><a href="methods.html#ceof-methods" id="toc-ceof-methods"><span class="toc-section-number">3.3</span> Complex Empirical Orthogonal Functions (cEOF)</a></li>
+<li><a href="methods.html#computation-procedures" id="toc-computation-procedures"><span class="toc-section-number">3.4</span> Computation procedures</a></li>
+</ul></li>
+<li><a href="results.html#results" id="toc-results"><span class="toc-section-number">4</span> Results</a>
+<ul>
+<li><a href="results.html#spatial" id="toc-spatial"><span class="toc-section-number">4.1</span> cEOF spatial patterns</a></li>
+<li><a href="results.html#regressions" id="toc-regressions"><span class="toc-section-number">4.2</span> cEOFs Regression maps</a>
+<ul>
+<li><a href="results.html#geopotential" id="toc-geopotential"><span class="toc-section-number">4.2.1</span> Geopotential</a></li>
+<li><a href="results.html#temp-ozone" id="toc-temp-ozone"><span class="toc-section-number">4.2.2</span> Temperature and Ozone</a></li>
+</ul></li>
+<li><a href="results.html#psa" id="toc-psa"><span class="toc-section-number">4.3</span> PSA</a></li>
+<li><a href="results.html#sam" id="toc-sam"><span class="toc-section-number">4.4</span> SAM</a></li>
+<li><a href="results.html#tropical" id="toc-tropical"><span class="toc-section-number">4.5</span> Tropical sources of cEOFs variabitliy</a></li>
+<li><a href="results.html#precipitation" id="toc-precipitation"><span class="toc-section-number">4.6</span> cEOFs surface impacts</a></li>
+</ul></li>
+<li><a href="discussion.html#discussion" id="toc-discussion"><span class="toc-section-number">5</span> Discussion and conclusions</a></li>
+<li><a href="declarations.html#declarations" id="toc-declarations">Declarations</a>
+<ul>
+<li><a href="declarations.html#funding" id="toc-funding">Funding</a></li>
+<li><a href="declarations.html#conflict-of-interestcompeting-interests" id="toc-conflict-of-interestcompeting-interests">Conflict of interest/Competing interests</a></li>
+<li><a href="declarations.html#ethics-approval" id="toc-ethics-approval">Ethics approval</a></li>
+<li><a href="declarations.html#consent-to-participate" id="toc-consent-to-participate">Consent to participate</a></li>
+<li><a href="declarations.html#consent-for-publication" id="toc-consent-for-publication">Consent for publication</a></li>
+<li><a href="declarations.html#availability-of-data-and-materials" id="toc-availability-of-data-and-materials">Availability of data and materials</a></li>
+<li><a href="declarations.html#code-availability" id="toc-code-availability">Code availability</a></li>
+<li><a href="declarations.html#authors-contributions" id="toc-authors-contributions">Authors’ contributions</a></li>
+</ul></li>
+<li><a href="extra-figures.html#extra-figures" id="toc-extra-figures"><span class="toc-section-number">6</span> Extra figures</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Revisiting the zonally asymmetric extratropical circulation of the Southern Hemisphere spring using complex empirical orthogonal functions</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="declarations" class="section level1 unnumbered">
+<h1>Declarations</h1>
+<div id="funding" class="section level2 unnumbered">
+<h2>Funding</h2>
+<p>The research was supported by UBACyT20020170100428BA, Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET) PIP 11220200102038CO, PICT-2020-SERIEA-I-INVI-00540, and the CLIMAX Project funded by Belmont Forum/ANR-15-JCL/-0002-01. Elio Campitelli was supported by a PhD grant from CONICET, Argentina.</p>
+</div>
+<div id="conflict-of-interestcompeting-interests" class="section level2 unnumbered">
+<h2>Conflict of interest/Competing interests</h2>
+<p>The authors have no relevant financial or non-financial interests to disclose.</p>
+</div>
+<div id="ethics-approval" class="section level2 unnumbered">
+<h2>Ethics approval</h2>
+<p>Not applicable.</p>
+</div>
+<div id="consent-to-participate" class="section level2 unnumbered">
+<h2>Consent to participate</h2>
+<p>Not applicable.</p>
+</div>
+<div id="consent-for-publication" class="section level2 unnumbered">
+<h2>Consent for publication</h2>
+<p>Not applicable.</p>
+</div>
+<div id="availability-of-data-and-materials" class="section level2 unnumbered">
+<h2>Availability of data and materials</h2>
+<p>All data used in this paper available in a Zenodo repository <span class="citation">(<a href="#ref-campitelli2022a" role="doc-biblioref">Campitelli, Díaz, and Vera 2022b</a>)</span> (<a href="https://zenodo.org/record/6612429" class="uri">https://zenodo.org/record/6612429</a>).
+Indices updated monthly and daily will be made available at <a href="http://www.cima.fcen.uba.ar/~elio.campitelli/shceof/" class="uri">http://www.cima.fcen.uba.ar/~elio.campitelli/shceof/</a>.</p>
+<p>It is also freely available from their respective sources:</p>
+<ul>
+<li><p>ERA5 data can be obtained via the Copernicus Climate Data Store (<a href="https://cds.climate.copernicus.eu/cdsapp\#!/dataset/reanalysis-era5-pressure-levels-monthly-means\" class="uri">https://cds.climate.copernicus.eu/cdsapp\#!/dataset/reanalysis-era5-pressure-levels-monthly-means\</a>).</p></li>
+<li><p>ERSSTv5 can be obtained via NOAA’s NCEI websiste at <a href="https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00927" class="uri">https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00927</a></p></li>
+<li><p>CMAP Precipitation data provided by the NOAA/OAR/ESRL PSL, Boulder, Colorado, USA, from their Web site at <a href="https://psl.noaa.gov/data/gridded/data.cmap.html" class="uri">https://psl.noaa.gov/data/gridded/data.cmap.html</a>.</p></li>
+<li><p>The Oceanic Niño Index is available via NOAA’s Climate Prediction Center: <a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/detrend.nino34.ascii.txt" class="uri">https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/detrend.nino34.ascii.txt</a>.</p></li>
+<li><p>The Oceanic Niño Index is available via NOAA’s Climate Prediction Center: <a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/detrend.nino34.ascii.txt" class="uri">https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/detrend.nino34.ascii.txt</a>.</p></li>
+<li><p>The Dipole Mode Index is available via Global Climate Observing System Working Group on Surface Pressure: <a href="https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/dmi.had.long.data" class="uri">https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/dmi.had.long.data</a></p></li>
+</ul>
+</div>
+<div id="code-availability" class="section level2 unnumbered">
+<h2>Code availability</h2>
+<p>A version-controlled repository of the code used to create this analysis, including the code used to download the data can be found at <a href="https://github.com/eliocamp/shceof" class="uri">https://github.com/eliocamp/shceof</a>.</p>
+</div>
+<div id="authors-contributions" class="section level2 unnumbered">
+<h2>Authors’ contributions</h2>
+<p>E.C. made the data curation, formal analysis and prepared all the figures. E.C. and L.D. wrote the main manuscript text.
+All authors reviewed the manuscript.</p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-campitelli2022a" class="csl-entry">
+Campitelli, Elio, Leandro Díaz, and Carolina Vera. 2022b. <span>“Data for "<span>Revisiting</span> the <span>Austral Spring Extratropical Southern Hemisphere</span> Zonally Asymmetric Circulation Using Complex <span>Empirical Orthogonal Functions</span>".”</span> <span>Zenodo</span>. <a href="https://doi.org/10.5281/zenodo.6612324">https://doi.org/10.5281/zenodo.6612324</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="discussion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="extra-figures.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
