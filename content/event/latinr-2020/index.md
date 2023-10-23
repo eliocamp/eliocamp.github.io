@@ -8,7 +8,7 @@ featured: false
 projects:
 - atmospheric-sciences
 summary: Presentation to LatinR 2020
-slug: latinr-latinr
+slug: latinr-2020
 tags: [r]
 
 url_slides: "https://docs.google.com/presentation/d/1bq5AfOiDpDWa7r8N4CRnVOTTRmdM-hkotXenmltEJhs/edit?usp=sharing"
