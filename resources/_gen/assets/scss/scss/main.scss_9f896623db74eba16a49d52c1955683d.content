@@ -9412,6 +9412,9 @@ div.chart {
   overflow-x: auto; }
 
 /* Whole document: */
+.important {
+  visibility: hidden; }
+
 body {
   margin-top: 100px !important;
   color: #172A3A; }
