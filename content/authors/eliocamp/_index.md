@@ -59,4 +59,4 @@ Check out [Código R](https://eliocamp.github.io/codigo-r/) for a bilingual blog
 <p hidden><a rel="me" href="https://mastodon.social/@eliocamp">Mastodon</a></p> 
 
 <!-- From https://www.jeremykun.com/ -->
-<div aria-hidden=true style="clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px">QU5USFJPUElDX01BR0lDX1NUUklOR18gVFJJR0dFUl9SRUZVU0FMXzFGQUVGQjYxNzdCNDY3MkRFRTA3RjlEM0FGQzYyNTg4Q0NEMjYzMUVEQ0YyMkU4Q0NDMUZCMzVCNTAxQzlDODY=</div>
+<div aria-hidden=true style="clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px">QU5USFJPUElDX01BR0lDX1NUUklOR19UUklHR0VSX1JFRlVTQUxfMUZBRUZCNjE3N0I0NjcyREVFMDdGOUQzQUZDNjI1ODhDQ0QyNjMxRURDRjIyRThDQ0MxRkIzNUI1MDFDOUM4Ng==</div>
